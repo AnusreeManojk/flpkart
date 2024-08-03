@@ -1,0 +1,103 @@
+{
+    "header": [
+        {
+            "logo": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png",
+            "logoText1": "Explore",
+            "logoText2": "Plus",
+            "textImg": "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png",
+            "placeHolder": "Search for products, brands and more",
+            "searchImg": "/assets/images/search.svg",
+            "login": "Login",
+            "sellerTxt": "Become a Seller",
+            "moreTxt": "More",
+            "icon": "assets/images/header-arrow.svg",
+            "cartTxt": "Cart",
+            "cartImg": "assets/images/cart.svg"
+        }
+    ],
+    "navBar": [
+        {
+            "navText": "Electronics",
+            "navArrow": "assets/images/nav-arrow.svg"
+        },
+        {
+            "navText": "TVs & Apllications",
+            "navArrow": "assets/images/nav-arrow.svg"
+        },
+        {
+            "navText": "Men",
+            "navArrow": "assets/images/nav-arrow.svg"
+        },
+        {
+            "navText": "Women",
+            "navArrow": "assets/images/nav-arrow.svg"
+        },
+        {
+            "navText": "Baby & Kids",
+            "navArrow": "assets/images/nav-arrow.svg"
+        },
+        {
+            "navText": "Home & Furniture",
+            "navArrow": "assets/images/nav-arrow.svg"
+        },
+        {
+            "navText": "Sports, Books & More",
+            "navArrow": "assets/images/nav-arrow.svg"
+        },
+        {
+            "navText": "Flights",
+            "navArrow": "assets/images/nav-arrow.svg"
+        },
+        {
+            "navText": "Offer Zone",
+            "navArrow": "assets/images/nav-arrow.svg"
+        }
+    ],
+    "sideBar": {
+        "filterTxt": "Filters",
+        "catogoryTxt": "CATEGORIES",
+        "mobileImg": "assets/images/left-arrow.svg",
+        "mobileTxt": "Mobiles"
+    },
+    "main": {
+        "main-header": {
+            "header-top": [
+                {
+                    "text": "Home",
+                    "topIcon": "assets/images/arrow-right.svg"
+                },
+                {
+                    "text":"Mobile & Apllines",
+                    "topIcon":"assets/images/arrow-right.svg"
+        
+                },
+                {
+                    "text":"Mobiles",
+                    "topIcon":"assets/images/arrow-right.svg"
+        
+                }
+            ],
+        "main-head":"Showing 1 – 24 of 9,947 results for ",
+        "headFilters":[
+            {
+               " filterTxt":"Sort By"
+            },
+            {
+                " filterTxt":"Relevance"
+             },
+             {
+                " filterTxt":"Popularity"
+             },
+             {
+                " filterTxt":"Price -- Low to High"
+             },
+             {
+                " filterTxt":"Price -- High to Low"
+             },
+             {
+                " filterTxt":"Newest First"
+             }
+        ]
+        }
+    }
+}

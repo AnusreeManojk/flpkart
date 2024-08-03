@@ -1,0 +1,271 @@
+@font-face {
+    font-family: "inter-italics";
+    src: url("/assets/fonts/Inter-Italic.woff2");
+}
+
+@font-face {
+    font-family: "inter-medium";
+    src: url("/assets/fonts/Inter-SemiBold.woff2");
+}
+
+@font-face {
+    font-family: "inter-regular";
+    src: url("/assets/fonts/Inter-Regular.woff2");
+}
+
+@font-face {
+    font-family: "inter-semiItalic";
+    src: url("/assets/fonts/Inter-SemiBoldItalic.woff2");
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    background-color: #2874f0;
+}
+
+.header-content {
+    padding: 0 124px;
+    max-width: 1248px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    line-height: 20px;
+    font-size: 16px;
+    /* letter-spacing: .1px; */
+    font-family: "inter-medium";
+    margin: 0 auto;
+    justify-content: right;
+
+}
+
+.header-content a {
+    line-height: 20px;
+    font-size: 16px;
+    /* letter-spacing: .1px; */
+    font-family: "inter-medium";
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    /* width: 100%; */
+    height: 100%;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -10px;
+    min-width: 137px;
+}
+
+.top-logo {
+    display: flex;
+    width: 75px;
+    height: 20.1167px;
+
+}
+
+.top-logo img {
+    width: 100%;
+    width: 75px;
+    height: 20.1167px;
+}
+
+.bottom-logo a {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.bottom-logo img {
+    width: 10px;
+    height: 10px;
+    margin-top: 1px;
+}
+
+.bottom-logo a {
+    font-family: "inter-italics";
+    font-size: 11px !important;
+    line-height: 15.4px !important;
+    font-weight: 200;
+    margin-top: -2px;
+    color: #fff;
+    letter-spacing: -0.1px !important;
+    /* position: relative;
+    top: -1px; */
+}
+
+.bottom-logo a img {
+    top: 1px;
+    position: relative;
+    left: -1px;
+}
+
+.bottom-logo span {
+    color: #ffe500;
+    font-family: "inter-italics";
+    font-size: 11px;
+    line-height: 15.4px;
+    font-weight: 200;
+    margin-right: 2px;
+}
+
+.input-padding {
+    width: 100%;
+    max-width: 564px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23);
+    margin: 0 14px 0 12px;
+}
+
+.input-div {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    max-height: 36px;
+    background-color: #fff;
+}
+
+.input-div input {
+    padding: 0 16px;
+    border-radius: 2px 0 0 2px;
+    border: 0;
+    font-size: 14px;
+    height: 36px;
+    width: 100%;
+}
+
+
+.input-div button {
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    padding-right: 10px;
+
+}
+
+.login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 21px;
+
+}
+
+.login button {
+    font-weight: 500;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 31px;
+    padding: 0px 39.5px;
+    border: 1px solid #dbdbdb;
+}
+
+.login button a {
+    color: #2874f0 !important;
+
+}
+
+.seller-txt {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    max-width: max-content;
+}
+
+.more-item {
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    height: 100%;
+    align-items: center;
+    margin: 0 20px;
+    max-width: 150px;
+    gap: 10px
+}
+
+.more-item span {
+    max-width: 108px;
+    color: #fff;
+}
+
+.more-item img {
+    transform: rotate(-90deg);
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    gap: 8px;
+    margin: 0 20px;
+    color: #fff;
+}
+.cart-content img{
+    width: 16.5px;
+    height: 15.8px;
+}
+
+.nav-padding {
+    width: 100%;
+    height: 40px;
+    background-color: #fffefe;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1248px;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+}
+
+.nav-item span {
+    color: #000;
+    font-size: 14px;
+    line-height: 19.6px;
+    font-family: "inter-medium";
+    letter-spacing: normal;
+}
+
+.nav-item img {
+    transform: rotate(-90deg);
+
+}
