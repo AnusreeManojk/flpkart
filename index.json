@@ -21,7 +21,7 @@
             "navArrow": "assets/images/nav-arrow.svg"
         },
         {
-            "navText": "TVs & Apllications",
+            "navText": "TVs & Apllances",
             "navArrow": "assets/images/nav-arrow.svg"
         },
         {
@@ -57,47 +57,191 @@
         "filterTxt": "Filters",
         "catogoryTxt": "CATEGORIES",
         "mobileImg": "assets/images/left-arrow.svg",
+        "mobileAccessories": "Mobiles & Accessories",
         "mobileTxt": "Mobiles"
     },
     "main": {
-        "main-header": {
-            "header-top": [
+        "mainHeader": {
+            "headerTop": [
                 {
                     "text": "Home",
                     "topIcon": "assets/images/arrow-right.svg"
                 },
                 {
-                    "text":"Mobile & Apllines",
-                    "topIcon":"assets/images/arrow-right.svg"
-        
+                    "text": "Mobile & Apllines",
+                    "topIcon": "assets/images/arrow-right.svg"
                 },
                 {
-                    "text":"Mobiles",
-                    "topIcon":"assets/images/arrow-right.svg"
-        
+                    "text": "Mobiles",
+                    "topIcon": "assets/images/arrow-right.svg"
                 }
             ],
-        "main-head":"Showing 1 – 24 of 9,947 results for ",
-        "headFilters":[
+            "mainHead": "Showing 1 – 24 of 9,947 results for ",
+            "headFilters": [
+                "Sort By",
+                "Relevance",
+                "Popularity",
+                "Price -- Low to High",
+                "Price -- High to Low",
+                "Newest First"
+            ]
+        },
+        "mobile-grid": [
             {
-               " filterTxt":"Sort By"
+                "mobileImg": "assets/images/iphon15.jpeg",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileDiscription": [
+                    {
+                        "mobileName": "Apple iPhone 15 (Blue, 128 GB)",
+                        "rateTxt": "4.6",
+                        "rateImg": "",
+                        "rateNumber": "44,931 Rating & 2,408 Reviews",
+                        "features1": "128 GB ROM",
+                        "features2": "15.49 cm (6.1 inch) Super Retina XDR Display",
+                        "features3": "48MP + 12MP | 12MP Front Camera",
+                        "features4": "A16 Bionic Chip, 6 Core Processor",
+                        "features5": "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+                    }
+                ],
+                "priceSection": [
+                    {
+                        "price": "₹71,999",
+                        "flipkartImg": "assets/images/flipkartAssured.png",
+                        "originalPrice": "₹79,600",
+                        "percentage": "9% off",
+                        "deliveryStatus": "Free delivery",
+                        "offerTxt": "Save extra with combo offers",
+                        "exchangeTxt1": "Upto ",
+                        "exchangeTxt2": "₹53,150 ",
+                        "exchangeTxt3": " Off on Exchange "
+                    }
+                ]
             },
             {
-                " filterTxt":"Relevance"
-             },
-             {
-                " filterTxt":"Popularity"
-             },
-             {
-                " filterTxt":"Price -- Low to High"
-             },
-             {
-                " filterTxt":"Price -- High to Low"
-             },
-             {
-                " filterTxt":"Newest First"
-             }
+                "mobileImg": "assets/images/pinkIphone.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileDiscription": [
+                    {
+                        "mobileName": "Apple iPhone 15 (Pink, 2565 GB)",
+                        "rateTxt": "4.6",
+                        "rateImg": "",
+                        "rateNumber": "44,931 Rating & 2,408 Reviews",
+                        "features1": "256 GB ROM",
+                        "features2": "15.49 cm (6.1 inch) Super Retina XDR Display",
+                        "features3": "48MP + 12MP | 12MP Front Camera",
+                        "features4": "A16 Bionic Chip, 6 Core Processor",
+                        "features5": "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+                    }
+                ],
+                "priceSection": [
+                    {
+                        "price": "₹81,999",
+                        "flipkartImg": "assets/images/flipkartAssured.png",
+                        "originalPrice": "₹89,600",
+                        "percentage": "8% off",
+                        "deliveryStatus": "Free delivery",
+                        "offerTxt": "Save extra with combo offers",
+                        "exchangeTxt1": "Upto ",
+                        "exchangeTxt2": "₹53,150 ",
+                        "exchangeTxt3": " Off on Exchange "
+                    }
+                ]
+            },
+            {
+                "mobileImg": "assets/images/iphoneBlack.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileDiscription": [
+                    {
+                        "mobileName": "Apple iPhone 15 (Black, 128GB)",
+                        "rateTxt": "4.6",
+                        "rateImg": "",
+                        "rateNumber": "44,931 Rating & 2,408 Reviews",
+                        "features1": "256 GB ROM",
+                        "features2": "15.49 cm (6.1 inch) Super Retina XDR Display",
+                        "features3": "48MP + 12MP | 12MP Front Camera",
+                        "features4": "A16 Bionic Chip, 6 Core Processor",
+                        "features5": "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+                    }
+                ],
+                "priceSection": [
+                    {
+                        "price": "₹71,999",
+                        "flipkartImg": "assets/images/flipkartAssured.png",
+                        "originalPrice": "₹79,600",
+                        "percentage": "9% off",
+                        "deliveryStatus": "Free delivery",
+                        "offerTxt": "Save extra with combo offers",
+                        "exchangeTxt1": "Upto ",
+                        "exchangeTxt2": "₹53,000 ",
+                        "exchangeTxt3": " Off on Exchange "
+                    }
+                ]
+            },
+            {
+                "mobileImg": "assets/images/iphon15.jpeg",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileDiscription": [
+                    {
+                        "mobileName": "Apple iPhone 15 (Blue, 128GB)",
+                        "rateTxt": "4.6",
+                        "rateImg": "",
+                        "rateNumber": "44,931 Rating & 2,408 Reviews",
+                        "features1": "256 GB ROM",
+                        "features2": "15.49 cm (6.1 inch) Super Retina XDR Display",
+                        "features3": "48MP + 12MP | 12MP Front Camera",
+                        "features4": "A16 Bionic Chip, 6 Core Processor",
+                        "features5": "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+                    }
+                ],
+                "priceSection": [
+                    {
+                        "price": "₹81,999",
+                        "flipkartImg": "assets/images/flipkartAssured.png",
+                        "originalPrice": "₹89,600",
+                        "percentage": "8% off",
+                        "deliveryStatus": "Free delivery",
+                        "offerTxt": "Save extra with combo offers",
+                        "exchangeTxt1": "Upto ",
+                        "exchangeTxt2": "₹53,150 ",
+                        "exchangeTxt3": " Off on Exchange "
+                    }
+                ]
+            },
+            {
+                "mobileImg": "assets/images/iphon15.jpeg",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileDiscription": [
+                    {
+                        "mobileName": "Apple iPhone 15 (Blue, 128GB)",
+                        "rateTxt": "4.6",
+                        "rateImg": "",
+                        "rateNumber": "44,931 Rating & 2,408 Reviews",
+                        "features1": "256 GB ROM",
+                        "features2": "15.49 cm (6.1 inch) Super Retina XDR Display",
+                        "features3": "48MP + 12MP | 12MP Front Camera",
+                        "features4": "A16 Bionic Chip, 6 Core Processor",
+                        "features5": "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
+                    }
+                ],
+                "priceSection": [
+                    {
+                        "price": "₹81,999",
+                        "flipkartImg": "assets/images/flipkartAssured.png",
+                        "originalPrice": "₹89,600",
+                        "percentage": "8% off",
+                        "deliveryStatus": "Free delivery",
+                        "offerTxt": "Save extra with combo offers",
+                        "exchangeTxt1": "Upto ",
+                        "exchangeTxt2": "₹53,150 ",
+                        "exchangeTxt3": " Off on Exchange "
+                    }
+                ]
+            }
         ]
-        }
     }
 }
