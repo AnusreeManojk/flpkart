@@ -276,6 +276,8 @@ header {
     padding: 8px;
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+
 }
 
 .main-left {
@@ -284,6 +286,7 @@ header {
     padding: 0px 10px 0px 0px;
     display: flex;
     width: 16.66%;
+    box-sizing: border-box;
 }
 
 .sidebar {
@@ -299,6 +302,7 @@ header {
     width: 100%;
     padding: 16px;
     padding-bottom: 12px;
+    box-sizing: border-box;
 }
 
 .filter span {
@@ -355,7 +359,7 @@ header {
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
-    font-size: 10px;
+    font-size: 11px;
     font-family: "inter-regular";
     line-height: 16.8px;
     cursor: pointer;
@@ -375,7 +379,7 @@ header {
 
 .top-middle {
     display: block;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .top-middle span {
@@ -420,7 +424,11 @@ header {
 .head-btm ul li:nth-child(n+3) {
     font-family: "inter-regular";
     line-height: 13.6px;
+}
 
+.head-btm ul li:nth-child(2) {
+color: #2975f0;
+border-bottom: 3px solid #2975f0;
 }
 
 /* tue */
@@ -463,9 +471,9 @@ header {
     font-size: 14px;
     color: #212121;
     cursor: pointer;
-    font-family: "inter-medium";
+    font-family: "inter-regular";
     box-sizing: border-box;
-    font-weight: 500;
+    font-weight: 5=400;
     margin-left: px;
 }
 
@@ -740,4 +748,70 @@ padding-top: 10px;
     background-color: #2874f0;
     height: 6px;
     width: 100%;
+}
+/* wed */
+.brand{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.brand-txt{
+    display: flex;
+    justify-content: space-between;
+}
+.brand span{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "inter-medium";
+    line-height: 16.8px;
+    color: #212121;
+}
+.brand img{
+    width: 11px;
+    height: 11px;
+    transform: rotate(90deg);
+}
+
+.search-content{
+    margin: 7px 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.search-div{
+    margin-bottom: 7px;
+    border-bottom:1px solid  #e0e0e0 ;
+    width: 100%;
+}
+
+.search-div input{
+    outline: none;
+    border: none;
+    color: #a79999;
+    margin-left: 8px;
+    padding-bottom: 3px;
+}
+.search-div img{
+    transform: rotate(-360deg);
+}
+.checkbox-item{
+    padding: 3px 0;
+}
+.checkbox-item label{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.checkbox-item input{
+    display: flex;
+}
+.checkboxTxt{
+    margin-left: 11px;
+    font-family: "inter-regular";
+    font-size: 13px;
+    width: 100%-25px;
+    color: #2c2c2c;
 }

@@ -59,8 +59,39 @@
         "mobileimg": "assets/images/left-arrow.svg",
         "mobileAccessories": "Mobiles & Accessories",
         "mobileTxt": "Mobiles",
-        "priceTxt":"PRICE"
+        "priceTxt": "PRICE",
+        "brandTxt": "BRAND",
+        "brandIcon": "assets/images/arrow-up.svg",
+        "brandInput": "Search Brand",
+        "searchIcon":"assets/images/small-search.svg",
+        "checkBoxes": [
 
+            {
+            "name":"SAMSUNG",
+            "id":"samsung"
+            },
+            {
+                "name":"vivo",
+                "id":"vivo"
+            },
+            {
+                "name":"OPPO",
+                "id":"oppo"
+            },
+            {
+                "name":"realme",
+                "id":"realme"
+            },
+            {
+                "name":"POCO",
+                "id":"poco"
+            },
+            {
+                "name":"MOTOROLA",
+                "id":"moto"
+
+            }
+        ]
     },
     "main": {
         "mainHeader": {
@@ -80,16 +111,35 @@
             ],
             "mainHead": "Showing 1 – 24 of 9,947 results for ",
             "headFilters": [
-                "Sort By",
-                "Relevance",
-                "Popularity",
-                "Price -- Low to High",
-                "Price -- High to Low",
-                "Newest First"
+                {
+                    "name": "Sort By",
+                    "id": "filter1"
+                },
+                {
+                    "name": "Relevance",
+                    "id": "filter2"
+                },
+                {
+                    "name": "Popularity",
+                    "id": "filter3"
+                },
+                {
+                    "name": "Price -- Low to High",
+                    "id": "filter4"
+                },
+                {
+                    "name": "Price -- High to Low",
+                    "id": "filter5"
+                },
+                {
+                    "name": "Newest First",
+                    "id": "filter5"
+                }
             ]
         },
         "mobileGrid": [
             {
+                "id":"iphone",
                 "mobileImg": "assets/images/iphon15.jpeg",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -104,17 +154,17 @@
                     "A16 Bionic Chip, 6 Core Processor",
                     "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
                 ],
-                "price": "₹71,999",
+                "price": "71,999",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹79,600",
+                "originalPrice": "79,600",
                 "percentage": "9% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save extra with combo offers",
                 "exchangeTxt": "Upto <span>₹53,150</span>Off on Exchange"
-                
             },
-           
             {
+                "id":"iphone",
+
                 "mobileImg": "assets/images/iphoneBlack.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -129,16 +179,17 @@
                     "A16 Bionic Chip, 6 Core Processor",
                     "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
                 ],
-                "price": "₹71,999",
+                "price": "71,999",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹79,600",
+                "originalPrice": "79,600",
                 "percentage": "9% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save extra with combo offers",
                 "exchangeTxt": "Upto <span>₹53,000 </span>Off on Exchange"
-            
             },
             {
+                "id":"moto",
+
                 "mobileImg": "assets/images/motoBlack.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -154,16 +205,17 @@
                     "T606 Processor",
                     "1 Year on Handset and 6 Months on Accessories"
                 ],
-                "price": "₹6,999",
+                "price": "6,999",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹9,999",
+                "originalPrice": "9,999",
                 "percentage": "30% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save Deal",
                 "exchangeTxt": "Upto <span>₹3,950</span>Off on Exchange"
-               
             },
             {
+                "id":"redmi",
+
                 "mobileImg": "assets/images/redmistarfrostWhite.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -179,17 +231,17 @@
                     "Helio G85 Processor",
                     "1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories"
                 ],
-                "price": "₹7,699",
+                "price": "7,699",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹11,999",
+                "originalPrice": "11,999",
                 "percentage": "35% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save Deal",
-                
-                "exchangeTxt":"Upto <span>₹5,250</span>Off on Exchange"
-                
+                "exchangeTxt": "Upto <span>₹5,250</span>Off on Exchange"
             },
             {
+                "id":"moto",
+
                 "mobileImg": "assets/images/motoEdgepink.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -205,17 +257,17 @@
                     "7s Gen 2 Processor",
                     "1 Year on Handset and 6 Months on Accessories"
                 ],
-                "price": "₹22,999",
+                "price": "22,999",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹25,999",
+                "originalPrice": "25,999",
                 "percentage": "11% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save Deal",
-                
-                "exchangeTxt":"Upto <span>₹21,200</span>Off on Exchange"
-                
+                "exchangeTxt": "Upto <span>₹21,200</span>Off on Exchange"
             },
             {
+                "id":"iphone",
+
                 "mobileImg": "assets/images/pinkIphone.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -230,16 +282,17 @@
                     "A16 Bionic Chip, 6 Core Processor",
                     "1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories"
                 ],
-                "price": "₹81,999",
+                "price": "81,999",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹89,600",
+                "originalPrice": "89,600",
                 "percentage": "8% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save extra with combo offers",
                 "exchangeTxt": "Upto <span>₹53,150</span>Off on Exchange"
-                
             },
             {
+                "id":"moto",
+
                 "mobileImg": "assets/images/motoMarshmallo.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -255,17 +308,17 @@
                     "7s Gen 2 Processor",
                     "1 Year on Handset and 6 Months on Accessories"
                 ],
-                "price": "₹22,999",
+                "price": "22,999",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹25,999",
+                "originalPrice": "25,999",
                 "percentage": "11% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save Deal",
-                
-                "exchangeTxt":"Upto <span>₹21,200</span>Off on Exchange"
-                
+                "exchangeTxt": "Upto <span>₹21,200</span>Off on Exchange"
             },
             {
+                "id":"poco",
+
                 "mobileImg": "assets/images/pocopastelGreen.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -281,16 +334,17 @@
                     "Helio G85 Processor",
                     "1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories"
                 ],
-                "price": "₹7,299",
+                "price": "7,299",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹11,999",
+                "originalPrice": "11,999",
                 "percentage": "39% off",
                 "deliveryStatus": "Free delivery",
-                "offerTxt": "Lowest price since launch",         
-                "exchangeTxt":"Bank Offer"
-                
+                "offerTxt": "Lowest price since launch",
+                "exchangeTxt": "Bank Offer"
             },
             {
+                "id":"moto",
+
                 "mobileImg": "assets/images/motoMintgreen.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -306,16 +360,17 @@
                     "Dimensity 7025 Processor",
                     "1 Year on Handset and 6 Months on Accessories"
                 ],
-                "price": "₹13,999",
+                "price": "13,999",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹17,999",
+                "originalPrice": "17,999",
                 "percentage": "22% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save Deal",
-                "exchangeTxt":"No Cost EMI from ₹2,334/month"
-                
+                "exchangeTxt": "No Cost EMI from ₹2,334/month"
             },
             {
+                "id":"redmi",
+
                 "mobileImg": "assets/images/redmi13cgreen.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -331,17 +386,17 @@
                     "Helio G85 Processor",
                     "1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories"
                 ],
-                "price": "₹7,699",
+                "price": "7,699",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹11,999",
+                "originalPrice": "11,999",
                 "percentage": "35% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save Deal",
-                
-                "exchangeTxt":"Bank Offer"
-                
+                "exchangeTxt": "Bank Offer"
             },
             {
+                "id":"poco",
+
                 "mobileImg": "assets/images/poco65pasteblu.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -357,17 +412,17 @@
                     "Helio G85 Processor",
                     "1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories"
                 ],
-                "price": "₹7,299",
+                "price": "7,299",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹11,999",
+                "originalPrice": "11,999",
                 "percentage": "39% off",
                 "deliveryStatus": "Free delivery",
-                "offerTxt": "Lowest price since launch",         
-                "exchangeTxt":"Bank Offer"
-                
+                "offerTxt": "Lowest price since launch",
+                "exchangeTxt": "Bank Offer"
             },
-           
             {
+                "id":"samsung",
+
                 "mobileImg": "assets/images/samsungF34.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
@@ -383,14 +438,39 @@
                     "Exynos 1280 Processor",
                     "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for In-Box Accessories"
                 ],
-                "price": "₹14,999",
+                "price": "14,999",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "₹25,999",
+                "originalPrice": "25,999",
                 "percentage": "42% off",
                 "deliveryStatus": "Free delivery",
-                "offerTxt": "Save Deal",         
-                "exchangeTxt":"Bank Offer"
-                
+                "offerTxt": "Save Deal",
+                "exchangeTxt": "Bank Offer"
+            },
+            {
+                "id":"samsung",
+
+                "mobileImg": "assets/images/samsungF34.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileName": "SAMSUNG Galaxy F34 5G (Electric Black, 128 GB)",
+                "rateTxt": "4.2",
+                "rateImg": "",
+                "rateNumber": "10,542 Ratings & 805 Reviews",
+                "specification": [
+                    "8 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                    "16.51 cm (6.5 inch) Full HD+ Display",
+                    "50MP (OIS) + 8MP + 2MP | 13MP Front Camera",
+                    "6000 mAh Battery",
+                    "Exynos 1280 Processor",
+                    "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for In-Box Accessories"
+                ],
+                "price": "14,999",
+                "flipkartImg": "assets/images/flipkartAssured.png",
+                "originalPrice": "25,999",
+                "percentage": "42% off",
+                "deliveryStatus": "Free delivery",
+                "offerTxt": "Save Deal",
+                "exchangeTxt": "Bank Offer"
             }
         ]
     }
