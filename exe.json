@@ -1,0 +1,205 @@
+
+
+  {
+                "checkBoxHead":"Brand",
+                "checkboxitem": [
+                    "SAMSUNG",
+                    "vivo",
+                    "OPPO",
+                    "realme",
+                    "POCO",
+                    "MOTOROLA"
+                ]
+            },
+            {
+                "checkBoxHead":"",
+             "checkboxitem":
+             ["assets/images/flipkartAssured.png"]
+            },
+
+            {
+                "checkBoxHead":"CUSTOMER RATING",
+                "checkboxitem":[
+                    "4& above",
+                    "3& above"
+                ]
+            },
+            {
+                "checkBoxHead":"GST INVOICE AVAILABLE",
+                "checkboxItem":[
+                    "GST Invoice  Available"
+                ]
+            },
+            {
+                "checkBoxHead":"RAM",
+                "checkboxitem":[
+                    "4GB",
+                    "3GB",
+                    "2GB",
+                    "1GB and Below",
+                    "8GB and Above",
+                    "G",
+                    "P",
+                    "E",
+                    "6 GB",
+                    "A",
+                    "B",
+                    "6 GB Above"
+                ]
+            }
+
+
+{
+  "sidebarSections": [
+    {
+      "sectionName": "BRAND",
+      "selectedItems": [
+        {
+          "value": "SAMSUNG",
+          "label": "SAMSUNG"
+        },
+        {
+          "value": "vivo",
+          "label": "vivo"
+        },
+        {
+          "value": "OPPO",
+          "label": "OPPO"
+        },
+         {
+          "value": "POCO",
+          "label": "POCO"
+        }, 
+        {
+          "value": "MOTOROLA",
+          "label": "MOTOROLA"
+        }, 
+        {
+          "value": "realme",
+          "label": "realme"
+        }
+      ]
+    },
+    {
+      "sectionName": "",
+      "selectedItems": [
+        {
+          "value": "flipkartAssured",
+               "label"  :"<img src='assets/images/flipkartAssured.padding'>"
+          
+        }
+       
+      ]
+    },
+    {
+      "sectionName": "CUSTOMER RATING",
+      "selectedItems": [
+        {
+          "value": "4  above",
+          "label": "4 <img src='assets/images/whitestar.svg'> & above"
+        },
+         {
+          "value": "3 star",
+          "label": "3 <img src='assets/images/whitestar.svg'> & above"
+        }
+       
+      ]
+    },
+      {
+      "sectionName": "GST INVOICE AVAILABLE",
+      "selectedItems": [
+        {
+          "value": "GST invoice",
+          "label": "GST Invoice Available"
+        }       
+       
+      ]
+    },
+    {
+      "sectionName": "RAM",
+      "selectedItems": [
+        {
+          "value": "4 gb",
+          "label": "4 GB"
+        },
+        {
+          "value": "3 gb",
+          "label": "3 GB"
+        },         
+        {
+          "value": "2 gb",
+          "label": "2 GB"
+        },   
+        {
+          "value": "1 gb and below",
+          "label": "1 GB and Below"
+        },   
+        {
+          "value": "8 gb",
+          "label": "8 GB and Above"
+        },   
+        {
+          "value": "G",
+          "label": "G"
+        },   
+        {
+          "value": "P",
+          "label": "P"
+        },   
+        {
+          "value": "E",
+          "label": "E"
+        }, 
+        {
+          "value": "6 gb",
+          "label": "6 GB"
+        }, 
+        {
+          "value": "A",
+          "label": "A"
+        }, 
+        {
+          "value": "B",
+          "label": "B"
+        },  
+        {
+          "value": "6 GB Above",
+          "label": "6 GB Above"
+        },   
+       
+      ]
+    },
+    {
+      "sectionName": "INTERNAL STORAGE",
+      "selectedItems": [
+        {
+          "value": "256 GB & Above",
+          "label": "256 GB & Above"
+        },
+        {
+          "value": "128-255.9GB",
+          "label": "128-255.9GB"
+        },         
+        {
+          "value": "64-127.9GB",
+          "label": "64-127.9GB"
+        },   
+        {
+          "value": "32-63.9GB",
+          "label": "32-63.9GB"
+        },   
+        {
+          "value": "16-31.9GB",
+          "label": "16-31.9GB"
+        },   
+        {
+          "value": "8-15.9GB",
+          "label": "8-15.9GB"
+        }
+      
+      ]
+    },
+    
+  ]
+}
+

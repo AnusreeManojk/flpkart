@@ -42,12 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // sidebar
 
-      const set=new Set()
 
       const sidBar = document.querySelector(".sidebar")
       const sideBarTop = document.querySelector(".filter")
       sideBarTop.innerHTML = `<span>${data.sideBar.filterTxt}</span>`
-      
+
       const Catogories = document.querySelector(".catogories")
       const catogoryTxt = document.createElement("div")
       catogoryTxt.className = "catogory-Txt"
@@ -75,103 +74,130 @@ document.addEventListener('DOMContentLoaded', () => {
       range.innerHTML = `<input type="range" min="0" max="30000" step="1">`
       priceRange.appendChild(range)
 
-     
+
       const brand = document.querySelector(".brand")
 
-      const brandtxt=document.createElement("div")
-      brandtxt.className="brand-txt"
+      const brandtxt = document.createElement("div")
+      brandtxt.className = "brand-txt"
       brandtxt.innerHTML = `<span>${data.sideBar.brandTxt}</span><img src="${data.sideBar.brandIcon}">`
-      
-     brand.appendChild(brandtxt)
 
-    const brandSearch=document.createElement("div")
-    brandSearch.className="search-content"
-    const searchDiv=document.createElement("div")
-    searchDiv.className="search-div"
-    searchDiv.innerHTML=`<img src="${data.sideBar.searchIcon}">
+      brand.appendChild(brandtxt)
+
+      const brandSearch = document.createElement("div")
+      brandSearch.className = "search-content"
+      const searchDiv = document.createElement("div")
+      searchDiv.className = "search-div"
+      searchDiv.innerHTML = `<img src="${data.sideBar.searchIcon}">
     <input type="text"  class="brand-input"  placeholder="${data.sideBar.brandInput}">`
-    brandSearch.appendChild(searchDiv)
-    brand.appendChild(brandSearch)
+      brandSearch.appendChild(searchDiv)
+      brand.appendChild(brandSearch)
 
-    const checkboxContent=document.createElement("div")
-    checkboxContent.className="checkbox-content"
-    data.sideBar.checkBoxes.forEach(item=>{
-      const checkboxItem=document.createElement("div")
-      checkboxItem.className="checkbox-item"
-      checkboxItem.innerHTML=` <label>
-      <input type="checkbox" id="${item.id}" name="brand"  class="checkboxInput" >
+
+      const brandInput = document.querySelector(".brand-input")
+      brandInput.addEventListener('input', function () {
+        const searchItem = this.value.toLowerCase();
+
+        const filteredItem = data.sideBar.checkBoxes.filter(product =>
+          product.name.toLowerCase().includes(searchItem)
+        );
+        products(filteredItem);
+      });
+
+
+
+      const checkboxContent = document.createElement("div")
+      checkboxContent.className = "checkbox-content"
+      data.sideBar.checkBoxes.forEach(item => {
+        const checkboxItem = document.createElement("div")
+        checkboxItem.className = "checkbox-item"
+        checkboxItem.innerHTML = ` <label>
+      <input type="checkbox" id="${item.id}" name="brand"  class="checkboxInput" value="${item.name}">
       <div class="checkboxTxt">  ${item.name}</div>
     </label>`
         checkboxContent.appendChild(checkboxItem)
 
-    })
+      })
 
-    brand.appendChild(checkboxContent)
+      brand.appendChild(checkboxContent)
 
-// checkbox filter
+      // checkbox filter
 
-    // const checkInput=document.querySelector(".checkboxInput")
+      const checkInputs = document.querySelectorAll(".checkboxInput");
+      const set = new Set();  // Initialize the set
 
-    // console.log(checkInput)
-    // checkInput.addEventListener('change',(e)=>{
+      checkInputs.forEach(input => {
+        input.addEventListener('change', (e) => {
+          if (input.checked) {
+            set.add(input.value.toLowerCase());
+          } else {
+            set.delete(input.value.toLowerCase());
+          }
+          console.log(set);
+          checkbox();
+        });
+      });
 
-    //   if(checkInput.checked){
-    //     set.add(checkInput.value.toLowerCase())
-    //     console.log(set)
-    //   }else{
-    //     set.delete(checkInput.value.toLowerCase())
-    //     console.log(set)
-    //   }
-
-    //   checkbox()
-    // })
-
-    
-    // function checkbox(){
-    //   if(set===0){
-    //     console.log('not')
-    //     products(data.main.mobileGrid)
-
-    //   }else{
-    //     console.log('yes')
-    //     const filterData=data.main.mobileGrid.filter(item=>
-    //       set.has(item.id.toLowerCase()))
-    //     products(filterData)
-
-    //   }
-    // }
-      const checkInput=document.querySelector(".checkboxInput")
-
-    function filterData() {
-      // Create an array to store selected brand values
-      const selectedBrands = Array.from(checkInput)
-        .filter(checkbox => checkbox.checked) // Filter only checked checkboxes
-        .map(checkbox => checkbox.value); // Map to the values
-      
-      if (selectedBrands.length > 0) {
-        // Use the array for filtering
-        const filter = data.main.mobileGrid.filter(product => selectedBrands.has(product.id.toLowerCase()));
-        products(filter);
-      } else {
-        products(data.sideBar.checkBoxes);
+      function checkbox() {
+        if (set.size === 0) {  // Use `set.size` to check if the set is empty
+          products(data.main.mobileGrid);
+        } else {
+          const filterData = data.main.mobileGrid.filter(item =>
+            set.has(item.id.toLowerCase())
+          );
+          products(filterData);
+        }
       }
-    }
-    
-    // Attach event listeners to checkboxes
-    document.querySelectorAll('.checkboxInput').forEach(checkbox => {
-      checkbox.addEventListener('change', filterData);
-    });
-    
-    // Initial call to display all products or filtered products based on the initial state of checkboxes
-    filterData();
 
+      // const checkInputs = document.querySelectorAll(".checkboxInput");
+
+      // function filterData() {
+      //   const selectedBrands = Array.from(checkInputs)
+      //     .filter(checkbox => checkbox.checked)
+      //     .map(checkbox => checkbox.value);
+      //   // console.log(selectedBrands)
+      //   if (selectedBrands.length > 0) {
+      //     const filter = data.main.mobileGrid.filter(product => {
+      //     return  selectedBrands.includes(product.id.toUpperCase())});
+      //     console.log(filter);
+      //   } else {
+      //     console.log(data.sideBar.checkBoxes);
+      //   }
+      // }
+
+      // document.querySelectorAll('.checkboxInput').forEach(checkbox => {
+      //   checkbox.addEventListener('change', filterData);
+      // });
+
+      // filterData();
+
+      const flipImgContent = document.createElement("div")
+      flipImgContent.className = "flipImgContent"
+      flipImgContent.innerHTML = '<input type="checkbox">'
+
+      const flipkartImg = document.createElement("div")
+      flipkartImg.className="flip-img"
+      flipkartImg.innerHTML = `<img src="${data.sideBar.flipCheck}">`
+      flipImgContent.appendChild(flipkartImg)
+      const flipspan = document.createElement("div")
+      flipspan.className="flip-span"
+      flipspan.innerHTML = `<span>?</span>`
+      flipImgContent.appendChild(flipspan)
+
+      sidBar.appendChild(flipImgContent)
+
+data.sideBar.customerRating.forEach(item=>{
+const sideSections=document.createElement("div")
+sideSections.className="side-sections"
+const sideSecHead=document.createElement("div")
+sideSecHead.innerHTML=`<h2${item.customerHead}</h2>`
+})
 
       // -maincontent
 
       const main = document.querySelector(".mainTop-padding")
       const topMain = document.createElement("div")
       topMain.className = "top-content"
-      
+
       // top1
       main.appendChild(topMain);
       data.main.mainHeader.headerTop.forEach(item => {
@@ -202,161 +228,225 @@ document.addEventListener('DOMContentLoaded', () => {
       })
 
 
-// price low-to-high fliters-wed
+      // price low-to-high fliters-wed
       const lowToHigh = document.getElementById("filter4")
       lowToHigh.addEventListener('click', function () {
         const itemsCopy = [...data.main.mobileGrid];
-        const sortedItems = itemsCopy.sort((a, b) => parseFloat(a.price) -parseFloat (b.price));
-      products(sortedItems)
+        const sortedItems = itemsCopy.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+        products(sortedItems)
 
-    });
-
-
-// price high-to-low fliters-wed
-
-    const HighToLow = document.getElementById("filter5")
-    HighToLow.addEventListener('click', function () {
-      const arrayItems = [...data.main.mobileGrid];
-      const sortedArray = arrayItems.sort((a, b) => parseFloat(b.price) -parseFloat (a.price));
-    products(sortedArray)
-
-  });
+      });
 
 
+      // price high-to-low fliters-wed
 
-  // filter function-search input
-  const searchInput = document.querySelector(".searchInput");
-  searchInput.addEventListener('input', function () {
-    const searchTerm = this.value.toLowerCase();
-    
-    const filteredProducts = data.main.mobileGrid.filter(product =>
-      product.mobileName.toLowerCase().includes(searchTerm)
-    );
-    products(filteredProducts);
-  });
+      const HighToLow = document.getElementById("filter5")
+      HighToLow.addEventListener('click', function () {
+        const arrayItems = [...data.main.mobileGrid];
+        const sortedArray = arrayItems.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+        products(sortedArray)
+
+      });
 
 
+      // filter function-search input
+      const searchInput = document.querySelector(".searchInput");
+      searchInput.addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase();
 
-  // right-main Content
-  const rightContent = document.querySelector(".right-content")
-
-  function products(productItem) {
-
-    rightContent.innerHTML = '';
-
-    productItem.forEach(item => {
-
-      const cardPadding = document.createElement("div")
-      cardPadding.className = "card-padding"
-
-      const card = document.createElement("div")
-      card.className = "card"
-
-      const cardLeft = document.createElement("div")
-      cardLeft.className = "card-left"
-
-
-      const cardLeftImg=document.createElement("div")
-      cardLeftImg.className="phone-img"
-      cardLeftImg.innerHTML=`<img src="${item.mobileImg}">`
-      cardLeft.appendChild(cardLeftImg)
-      const cardLeftInput=document.createElement("div")
-      cardLeftInput.className="input"
-      
-      cardLeftInput.innerHTML=`<input type="checkbox"> <span>${item.checkBoxTxt}`
-    cardLeft.appendChild(cardLeftInput)
-      const likeImg = document.createElement("div")
-      likeImg.className = "like-img"
-      likeImg.innerHTML = `<img src="${item.likeImg}">`
-      cardLeft.appendChild(likeImg)
-      card.appendChild(cardLeft)
-
-
-      const cardRight = document.createElement("div")
-      cardRight.className = "card-right"
-      // card.appendChild(cardRight)
-
-      const rightFirst = document.createElement("div")
-      rightFirst.className = "right-first"
-      const mobileName = document.createElement("h2")
-      mobileName.innerText = item.mobileName
-      rightFirst.appendChild(mobileName)
-
-      const rating = document.createElement("div")
-      rating.className = "rating"
-      const rateBtn = document.createElement("div")
-      rateBtn.className = "rate-btn"
-      rateBtn.innerHTML = `<span>${item.rateTxt}<img src="${item.rateImg}.</span>"`
-      rating.appendChild(rateBtn)
-
-      const review = document.createElement("p")
-      review.innerText = item.rateNumber
-      rating.appendChild(review)
-      rightFirst.appendChild(rating)
-
-
-      const specUl = document.createElement("ul")
-
-      item.specification.forEach(item => {
-        const listItem = document.createElement("li")
-        listItem.innerHTML = item
-        specUl.appendChild(listItem)
-      })
-      rightFirst.appendChild(specUl)
-
-
-      //  rating.appendChild(rateBtn)
-
-      cardRight.appendChild(rightFirst)
-
-      const rightEnd = document.createElement("div")
-      rightEnd.className = "right-end"
-      const endTop = document.createElement("div")
-      endTop.className = "end-top"
-      const priceDetail = document.createElement("div")
-      priceDetail.className = "price-details"
+        const filteredProducts = data.main.mobileGrid.filter(product =>
+          product.mobileName.toLowerCase().includes(searchTerm)
+        );
+        products(filteredProducts);
+      });
 
 
 
-      const priceTop = document.createElement("div")
-      priceTop.className = "price-top"
-      priceTop.innerHTML = `<h2>₹${item.price}</h2>
+      // right-main Content
+      const rightContent = document.querySelector(".right-content")
+
+      function products(productItem) {
+
+        rightContent.innerHTML = '';
+
+        productItem.forEach(item => {
+
+          const cardPadding = document.createElement("div")
+          cardPadding.className = "card-padding"
+
+          const card = document.createElement("div")
+          card.className = "card"
+
+          const cardLeft = document.createElement("div")
+          cardLeft.className = "card-left"
+
+
+          const cardLeftImg = document.createElement("div")
+          cardLeftImg.className = "phone-img"
+          cardLeftImg.innerHTML = `<img src="${item.mobileImg}">`
+          cardLeft.appendChild(cardLeftImg)
+          const cardLeftInput = document.createElement("div")
+          cardLeftInput.className = "input"
+
+          cardLeftInput.innerHTML = `<input type="checkbox"> <span>${item.checkBoxTxt}`
+          cardLeft.appendChild(cardLeftInput)
+          const likeImg = document.createElement("div")
+          likeImg.className = "like-img"
+          likeImg.innerHTML = `<img src="${item.likeImg}">`
+          cardLeft.appendChild(likeImg)
+          card.appendChild(cardLeft)
+
+
+          const cardRight = document.createElement("div")
+          cardRight.className = "card-right"
+          // card.appendChild(cardRight)
+
+          const rightFirst = document.createElement("div")
+          rightFirst.className = "right-first"
+          const mobileName = document.createElement("h2")
+          mobileName.innerText = item.mobileName
+          rightFirst.appendChild(mobileName)
+
+          const rating = document.createElement("div")
+          rating.className = "rating"
+          const rateBtn = document.createElement("div")
+          rateBtn.className = "rate-btn"
+          rateBtn.innerHTML = `<span>${item.rateTxt}<img src="${item.rateImg}"></span>`
+          rating.appendChild(rateBtn)
+
+          const review = document.createElement("p")
+          review.innerText = item.rateNumber
+          rating.appendChild(review)
+          rightFirst.appendChild(rating)
+
+
+          const specUl = document.createElement("ul")
+
+          item.specification.forEach(item => {
+            const listItem = document.createElement("li")
+            listItem.innerHTML = item
+            specUl.appendChild(listItem)
+          })
+          rightFirst.appendChild(specUl)
+
+
+          //  rating.appendChild(rateBtn)
+
+          cardRight.appendChild(rightFirst)
+
+          const rightEnd = document.createElement("div")
+          rightEnd.className = "right-end"
+          const endTop = document.createElement("div")
+          endTop.className = "end-top"
+          const priceDetail = document.createElement("div")
+          priceDetail.className = "price-details"
+
+
+
+          const priceTop = document.createElement("div")
+          priceTop.className = "price-top"
+          priceTop.innerHTML = `<h2>₹${item.price}</h2>
         <div class="price-last">₹${item.originalPrice}<span>${item.percentage}</span></div>`
-      priceDetail.appendChild(priceTop)
+          priceDetail.appendChild(priceTop)
 
-      const priceBottom = document.createElement("div")
-      priceBottom.className = "price-btm"
-      priceBottom.innerHTML = `<span>${item.deliveryStatus}  </span>`
-      priceDetail.appendChild(priceBottom)
-      endTop.appendChild(priceDetail)
-      const flipkartImg = document.createElement("div")
-      flipkartImg.className = "flipkart-img"
-      flipkartImg.innerHTML = `<img src="${item.flipkartImg}">`
+          const priceBottom = document.createElement("div")
+          priceBottom.className = "price-btm"
+          priceBottom.innerHTML = `<span>${item.deliveryStatus}  </span>`
+          priceDetail.appendChild(priceBottom)
+          endTop.appendChild(priceDetail)
+          const flipkartImg = document.createElement("div")
+          flipkartImg.className = "flipkart-img"
+          flipkartImg.innerHTML = `<img src="${item.flipkartImg}">`
 
-      // endTop.appendChild(priceDetail)
-      endTop.appendChild(flipkartImg)
+          // endTop.appendChild(priceDetail)
+          endTop.appendChild(flipkartImg)
 
-      rightEnd.appendChild(endTop)
+          rightEnd.appendChild(endTop)
 
-      const offerTxt = document.createElement("div")
-      offerTxt.className = "offer-txt"
-      offerTxt.innerHTML = `<span>${item.offerTxt}</span>`
-      rightEnd.appendChild(offerTxt)
+          const offerTxt = document.createElement("div")
+          offerTxt.className = "offer-txt"
+          offerTxt.innerHTML = `<span>${item.offerTxt}</span>`
+          rightEnd.appendChild(offerTxt)
 
-      const bottomSpan = document.createElement("div")
-      bottomSpan.className = "btm-span"
-      bottomSpan.innerHTML = item.exchangeTxt
-      rightEnd.appendChild(bottomSpan)
-      cardRight.appendChild(rightEnd)
+          const bottomSpan = document.createElement("div")
+          bottomSpan.className = "btm-span"
+          bottomSpan.innerHTML = item.exchangeTxt
+          rightEnd.appendChild(bottomSpan)
+          cardRight.appendChild(rightEnd)
 
-      card.appendChild(cardRight)
-      cardPadding.appendChild(card)
-      rightContent.appendChild(cardPadding)
+          card.appendChild(cardRight)
+          cardPadding.appendChild(card)
+          rightContent.appendChild(cardPadding)
 
 
-      
+
+        })
+      }
+      products(data.main.mobileGrid)
     })
-  }
-  products(data.main.mobileGrid)
 })
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

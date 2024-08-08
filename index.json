@@ -63,34 +63,38 @@
         "brandTxt": "BRAND",
         "brandIcon": "assets/images/arrow-up.svg",
         "brandInput": "Search Brand",
-        "searchIcon":"assets/images/small-search.svg",
+        "searchIcon": "assets/images/small-search.svg",
         "checkBoxes": [
 
             {
-            "name":"SAMSUNG",
-            "id":"samsung"
+            "name":"SAMSUNG"
             },
             {
-                "name":"vivo",
-                "id":"vivo"
+                "name":"vivo"
             },
             {
-                "name":"OPPO",
-                "id":"oppo"
+                "name":"OPPO"
             },
             {
-                "name":"realme",
-                "id":"realme"
+                "name":"realme"
             },
             {
-                "name":"POCO",
-                "id":"poco"
+                "name":"POCO"
             },
             {
-                "name":"MOTOROLA",
-                "id":"moto"
+                "name":"MOTOROLA"
 
             }
+        ],
+        "flipCheck":"assets/images/flipkartAssured.png",
+        "customerRating":[{
+            "customerHead":"CUSTOMER RATING",
+            "customerItems":[
+                "4<img src='assets/images/whitestar.svg'> & above",
+                "3<img src='assets/images/whitestar.svg'> & above"
+            ]
+            
+        }
         ]
     },
     "main": {
@@ -139,13 +143,13 @@
         },
         "mobileGrid": [
             {
-                "id":"iphone",
+                "id": "iphone",
                 "mobileImg": "assets/images/iphon15.jpeg",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "Apple iPhone 15 (Blue, 128 GB)",
                 "rateTxt": "4.6",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "44,931 Rating & 2,408 Reviews",
                 "specification": [
                     "128 GB ROM",
@@ -163,14 +167,13 @@
                 "exchangeTxt": "Upto <span>₹53,150</span>Off on Exchange"
             },
             {
-                "id":"iphone",
-
+                "id": "iphone",
                 "mobileImg": "assets/images/iphoneBlack.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "Apple iPhone 15 (Black, 128GB)",
                 "rateTxt": "4.6",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "44,931 Rating & 2,408 Reviews",
                 "specification": [
                     "256 GB ROM",
@@ -188,14 +191,13 @@
                 "exchangeTxt": "Upto <span>₹53,000 </span>Off on Exchange"
             },
             {
-                "id":"moto",
-
+                "id": "motorola",
                 "mobileImg": "assets/images/motoBlack.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "Motorola g04s (Concord Black, 64 GB)  (4 GB RAM)",
                 "rateTxt": "4.6",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "9,783 Ratings & 550 Reviews",
                 "specification": [
                     "4 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
@@ -214,14 +216,13 @@
                 "exchangeTxt": "Upto <span>₹3,950</span>Off on Exchange"
             },
             {
-                "id":"redmi",
-
+                "id": "redmi",
                 "mobileImg": "assets/images/redmistarfrostWhite.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "REDMI 13C (Starfrost White, 128 GB)",
                 "rateTxt": "4.2",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "33,979 Ratings & 1,432 Reviews",
                 "specification": [
                     "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -240,14 +241,13 @@
                 "exchangeTxt": "Upto <span>₹5,250</span>Off on Exchange"
             },
             {
-                "id":"moto",
-
+                "id": "motorola",
                 "mobileImg": "assets/images/motoEdgepink.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "Motorola Edge 50 Fusion (Hot Pink, 128 GB)",
                 "rateTxt": "4.5",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "29,265 Ratings & 1,862 Reviews",
                 "specification": [
                     "8 GB RAM | 128 GB ROM",
@@ -266,14 +266,13 @@
                 "exchangeTxt": "Upto <span>₹21,200</span>Off on Exchange"
             },
             {
-                "id":"iphone",
-
+                "id": "iphone",
                 "mobileImg": "assets/images/pinkIphone.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "Apple iPhone 15 (Pink, 2565 GB)",
                 "rateTxt": "4.6",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "44,931 Rating & 2,408 Reviews",
                 "specification": [
                     "256 GB ROM",
@@ -291,14 +290,13 @@
                 "exchangeTxt": "Upto <span>₹53,150</span>Off on Exchange"
             },
             {
-                "id":"moto",
-
+                "id": "motorola",
                 "mobileImg": "assets/images/motoMarshmallo.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "Motorola Edge 50 Fusion (Marshmallow, 128 GB)",
                 "rateTxt": "4.5",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "29,265 Ratings & 1,862 Reviews",
                 "specification": [
                     "8 GB RAM | 128 GB ROM",
@@ -317,14 +315,13 @@
                 "exchangeTxt": "Upto <span>₹21,200</span>Off on Exchange"
             },
             {
-                "id":"poco",
-
+                "id": "poco",
                 "mobileImg": "assets/images/pocopastelGreen.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "POCO C65 (Pastel Blue, 128 GB)",
                 "rateTxt": "4.2",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "13,096 Ratings & 670 Reviews",
                 "specification": [
                     "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -343,14 +340,13 @@
                 "exchangeTxt": "Bank Offer"
             },
             {
-                "id":"moto",
-
+                "id": "motorola",
                 "mobileImg": "assets/images/motoMintgreen.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "Motorola Edge 50 Fusion (Hot Pink, 128 GB)",
                 "rateTxt": "4.5",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "29,265 Ratings & 1,862 Reviews",
                 "specification": [
                     "8 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -369,14 +365,13 @@
                 "exchangeTxt": "No Cost EMI from ₹2,334/month"
             },
             {
-                "id":"redmi",
-
+                "id": "redmi",
                 "mobileImg": "assets/images/redmi13cgreen.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "REDMI 13C (Starshine Green, 128 GB)",
                 "rateTxt": "4.2",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "33,979 Ratings & 1,432 Reviews",
                 "specification": [
                     "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -395,14 +390,13 @@
                 "exchangeTxt": "Bank Offer"
             },
             {
-                "id":"poco",
-
+                "id": "poco",
                 "mobileImg": "assets/images/poco65pasteblu.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "POCO C65 (Pastel Blue, 128 GB)",
                 "rateTxt": "4.2",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "13,096 Ratings & 670 Reviews",
                 "specification": [
                     "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -421,14 +415,13 @@
                 "exchangeTxt": "Bank Offer"
             },
             {
-                "id":"samsung",
-
+                "id": "samsung",
                 "mobileImg": "assets/images/samsungF34.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
                 "mobileName": "SAMSUNG Galaxy F34 5G (Electric Black, 128 GB)",
                 "rateTxt": "4.2",
-                "rateImg": "",
+                "rateImg": "assets/images/whitestar.svg",
                 "rateNumber": "10,542 Ratings & 805 Reviews",
                 "specification": [
                     "8 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
@@ -447,30 +440,105 @@
                 "exchangeTxt": "Bank Offer"
             },
             {
-                "id":"samsung",
-
-                "mobileImg": "assets/images/samsungF34.png",
+                "id": "redmi",
+                "mobileImg": "assets/images/redmi13cgreen.png",
                 "checkBoxTxt": "Add to compare",
                 "likeImg": "assets/images/like.svg",
-                "mobileName": "SAMSUNG Galaxy F34 5G (Electric Black, 128 GB)",
+                "mobileName": "REDMI 13C (Starshine Green, 128 GB)",
                 "rateTxt": "4.2",
-                "rateImg": "",
-                "rateNumber": "10,542 Ratings & 805 Reviews",
+                "rateImg": "assets/images/whitestar.svg",
+                "rateNumber": "33,979 Ratings & 1,432 Reviews",
                 "specification": [
-                    "8 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
-                    "16.51 cm (6.5 inch) Full HD+ Display",
-                    "50MP (OIS) + 8MP + 2MP | 13MP Front Camera",
-                    "6000 mAh Battery",
-                    "Exynos 1280 Processor",
-                    "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for In-Box Accessories"
+                    "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                    "17.12 cm (6.74 inch) HD+ Display",
+                    "50MP Rear Camera | 8MP Front Camera",
+                    "5000 mAh Battery",
+                    "Helio G85 Processor",
+                    "1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories"
                 ],
-                "price": "14,999",
+                "price": "7,699",
                 "flipkartImg": "assets/images/flipkartAssured.png",
-                "originalPrice": "25,999",
-                "percentage": "42% off",
+                "originalPrice": "11,999",
+                "percentage": "35% off",
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save Deal",
                 "exchangeTxt": "Bank Offer"
+            },
+            
+            {
+                "id": "realme",
+                "mobileImg": "assets/images/realme.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileName": "realme P1 5G (Phoenix Red, 128 GB)",
+                "rateTxt": "4.3",
+                "rateImg": "assets/images/whitestar.svg",
+                "rateNumber": "23,286 Ratings & 805 1,465 Reviews",
+                "specification": [
+                    "6 GB RAM | 128 GB ROM | Expandable Upto 2 TB",
+                    "16.94 cm (6.67 inch) Full HD+ Display",
+                    "50MP + 2MP | 16MP Front Camera",
+                    "5000 mAh Battery",
+                    "Dimensity 7050 Processor",
+                    "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for In-Box Accessories"
+                ],
+                "price": "15,999",
+                "flipkartImg": "assets/images/flipkartAssured.png",
+                "originalPrice": "20,999",
+                "percentage": "23% off",
+                "deliveryStatus": "Free delivery",
+                "offerTxt": "Save Deal",
+                "exchangeTxt": "Upto ₹11,650 Off on Exchange"
+            },
+            {
+                "id": "oppo",
+                "mobileImg": "assets/images/oppo-violet.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileName": "OPPO K12x 5G with 45W SUPERVOOC Charger In-The-Box (Midnight Voilet, 128 GB)",
+                "rateTxt": "4.6",
+                "rateImg": "assets/images/whitestar.svg",
+                "rateNumber": "3,840 Ratings & 59 Reviews",
+                "specification": [
+                    "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                    "16.94 cm (6.67 inch) Full HD+ Display",
+                    "32MP + 2MP | 8MP Front Camera",
+                    "5100 mAh Battery",
+                    "Dimensity 6300 Processor",
+                    "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for In-Box Accessories"
+                ],
+                "price": "12,999",
+                "flipkartImg": "assets/images/flipkartAssured.png",
+                "originalPrice": "16,999",
+                "percentage": "23% off",
+                "deliveryStatus": "Free delivery",
+                "offerTxt": "Save Deal",
+                "exchangeTxt": "Upto ₹8,100 Off on Exchange"
+            },
+            {
+                "id": "vivo",
+                "mobileImg": "assets/images/vivoBlack.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileName": "vivo T3 Lite 5G (Majestic Black, 128 GB)",
+                "rateTxt": "4.6",
+                "rateImg": "assets/images/whitestar.svg",
+                "rateNumber": "9,320 Ratings & 321 Reviews",
+                "specification": [
+                    "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                    "16.66 cm (6.56 inch) Display",
+                    "50MP + 2MP | 8MP Front Camera",
+                    "5000 mAh Battery",
+                    "Dimensity 6300 Processor",
+                    "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for In-Box Accessories"
+                ],
+                "price": "12,999",
+                "flipkartImg": "assets/images/flipkartAssured.png",
+                "originalPrice": "16,999",
+                "percentage": "23% off",
+                "deliveryStatus": "Free delivery",
+                "offerTxt": "Save Deal",
+                "exchangeTxt": "Upto ₹8,100 Off on Exchange"
             }
         ]
     }
