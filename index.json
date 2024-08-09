@@ -21,7 +21,7 @@
             "navArrow": "assets/images/nav-arrow.svg"
         },
         {
-            "navText": "TVs & Apllances",
+            "navText": "TVs & Appllances",
             "navArrow": "assets/images/nav-arrow.svg"
         },
         {
@@ -60,41 +60,364 @@
         "mobileAccessories": "Mobiles & Accessories",
         "mobileTxt": "Mobiles",
         "priceTxt": "PRICE",
+        "min":[
+            "Min",
+            "₹10000",
+            "₹15000",
+            "₹20000",
+            "₹30000"
+        ],
+        "max":[
+             "₹10000",
+             "₹15000",
+             "₹20000",
+             "₹30000",
+             "₹30000+"
+
+        ],
         "brandTxt": "BRAND",
         "brandIcon": "assets/images/arrow-up.svg",
         "brandInput": "Search Brand",
         "searchIcon": "assets/images/small-search.svg",
-        "checkBoxes": [
-
-            {
-            "name":"SAMSUNG"
-            },
-            {
-                "name":"vivo"
-            },
-            {
-                "name":"OPPO"
-            },
-            {
-                "name":"realme"
-            },
-            {
-                "name":"POCO"
-            },
-            {
-                "name":"MOTOROLA"
-
-            }
+        "brand": [
+            "SAMSUNG",
+            "vivo",
+            "OPPO",
+            "realme",
+            "POCO",
+            "MOTOROLA"
         ],
-        "flipCheck":"assets/images/flipkartAssured.png",
-        "customerRating":[{
-            "customerHead":"CUSTOMER RATING",
-            "customerItems":[
-                "4<img src='assets/images/whitestar.svg'> & above",
-                "3<img src='assets/images/whitestar.svg'> & above"
-            ]
+        "more": "171 MORE",
+        "flipCheck": "assets/images/flipkartAssured.png",
+        "sidebarSections": [
+            {
+                "sectionName": "CUSTOMER RATING",
+                "id": "rating",
+                "nameId": "display",
+
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "4 <img src='assets/images/blackstar.svg'> & above",
+                    "3 <img src='assets/images/blackstar.svg'> & above"
+                ]
+            },
+            {
+                "sectionName": "GST INVOICE AVAILABLE",
+                "id": "gst",
+                "nameId": "displaynone",
+
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "GST Invoice Available"
+                ]
+            },
+            {
+                "sectionName": "RAM",
+                "id": "ram",
+                "nameId": "display",
+
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "4 GB",
+                    "3 GB",
+                    "2 GB",
+                    "1 GB and Below",
+                    "8 GB and Above",
+                    "G",
+                    "P",
+                    "E",
+                    "6 GB",
+                    "A",
+                    "B",
+                    "6 GB Above"
+                ]
+            },
+            {
+                "sectionName": "INTERNAL STORAGE",
+                "id": "storage",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "256 GB & Above",
+                    "128-255.9GB",
+                    "64-127.9GB",
+                    "32-63.9GB",
+                    "16-31.9GB",
+                    "8-15.9GB"
+                ],
+                "moreBtn": "10 MORE"
+            },
+            {
+                "sectionName": "BATTERY CAPACITY",
+                "id": "batery",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "1000 - 1999mAh",
+                    "2000 - 2999mAh",
+                    "3000 - 3999mAh",
+                    "4000 - 4999mAh",
+                    "5000 - 5999mAh",
+                    "5000 mAh Above",
+                    "6000 mAh & Above",
+                    "A",
+                    "B",
+                    "E",
+                    "G",
+                    "Less than 1000mAh",
+                    "P"
+                ]
+            },
+            {
+                "sectionName": "SCREEN SIZE",
+                "id": "screen",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "5.7 - 5.9 inch",
+                    "5.5 - 5.6 inch",
+                    "5.2 - 5.4 inch",
+                    "5 - 5.1 inch",
+                    "4.5 - 4.9 inch",
+                    "4 - 4.4 inch",
+                    "3.5 - 3.9 inch",
+                    "3 - 3.4 inch",
+                    "Less than 3 inch",
+                    "6.4 inch & Above",
+                    "6 - 6.3 inch",
+                    "6 inch above"
+                ]
+            },
+            {
+                "sectionName": "PRIMARY CAMERA",
+                "id": "Primary-camera",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "5 - 7.9 MP",
+                    "Below 5MP",
+                    "8 - 11.9 MP",
+                    "12 - 12.9 MP",
+                    "12 - 15.9 MP",
+                    "13 - 15.9 MP",
+                    "16 - 20.9 MP",
+                    "21 - 31.9 MP",
+                    "21 MP Above",
+                    "32 - 47.9 MP",
+                    "48 - 63.9 MP",
+                    "64 MP & Above"
+                ]
+            },
+            {
+                "sectionName": "SECONDARY CAMERA",
+                "id": "Secondary-camera",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "12 - 12.9 MP",
+                    "12 - 15.9 MP",
+                    "13 - 15.9 MP",
+                    "16 - 20.9 MP",
+                    "21 MP Above",
+                    "21 MP & Above",
+                    "5 - 7.9 MP",
+                    "8 - 11.9 MP",
+                    "Below 5 MP"
+                ]
+            },
+            {
+                "sectionName": "PROCESSOR BRAND",
+                "id": "processor",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "AMD",
+                    "Apple",
+                    "ARM",
+                    "Exynos",
+                    "Google",
+                    "HiSilicon",
+                    "Huawei",
+                    "Intel",
+                    "Mediatek",
+                    "NVIDIA",
+                    "Qualcomm",
+                    "Snapdragon",
+                    "Spreadtrum",
+                    "Unisoc"
+                ]
+            },
+            {
+                "sectionName": "SPECIALITY",
+                "id": "speciality",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "Big Storage",
+                    "Higher Performance",
+                    "Long-Lasting Battery",
+                    "Selfie Camera"
+                ]
+            },
+            {
+                "sectionName": "RESOLUTION TYPE",
+                "id": "resolution",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "Full HD",
+                    "Full HD+",
+                    "Full HD+ AMOLED Display",
+                    "Full HD+ E3 Super AMOLED Display",
+                    "Full HD+ E3 Super AMOLED Display",
+                    "FWVGA"    
+                ],
+                "more":"21 MORE"
+            },
+            {
+                "sectionName": "OPERATING SYSTEM",
+                "id": "operating-system",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "Android",
+                    "Symbian",
+                    "Windows"
+                ]
+            },
+            {
+                "sectionName": "NETWORK TYPE",
+                "id": "network",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "2G",
+                    "3G",
+                    "4G",
+                    "4G VOLTE",
+                    "5G"
+                ]
+            },
+            {
+                "sectionName": "SIM TYPE",
+                "id": "sim-type",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "Dual Sim",
+                    "Dual Sim(Nano + eSIM)",
+                    "Dual Sim(Physical + eSIM)",
+                    "Single Sim"
+                ]
+            },
+            {
+                "sectionName": "OFFERS",
+                "id": "offers",
+                "nameId": "display",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "Buy More, Save More",
+                    "No Cost EMI",
+                    "Special Price"
+                ]
+            },
+            {
+                "sectionName": "FEATURES",
+                "id": "featues",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "WiFI",
+                    "HD Recording",
+                    "FM Player",
+                    "NFC",
+                    "Music Player",
+                    "Bluetooth",
+                    "USB"
+                ]
+            },
+            {
+                "sectionName": "TYPE",
+                "id": "type",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "Smartphones",
+                    "Feature Phones"
+                ]
+            },
+            {
+                "sectionName": "NUMBER OF CORES",
+                "id": "cores",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "Dual Core",
+                    "Hexa Core",
+                    "Octa Core",
+                    "Quad Core",
+                    "Single Core"
+                ]
+            },
+            {
+                "sectionName": "AVAILABILITY",
+                "id": "availability",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "Exclude Out of Stock"
+                ]
+            },
+            {
+                "sectionName": "DISCOUNT",
+                "id": "discount",
+                "nameId": "display",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "50% or more",
+                    "40% or more",
+                    "30% or more",
+                    "20% or more",
+                    "10% or more"
+                ]
+            },
+            {
+                "sectionName": "OPERATING SYSTEM VERSION NAME",
+                "id": "version-name",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "Android Q",
+                    "Anna",
+                    "Froyo",
+                    "Ice Cream Sandwich",
+                    "KitKat",
+                    "Lollipop",
+                    "Marshmallow",
+                    "Nougat",
+                    "Oreo",
+                    "Oxygen",
+                    "Pie",
+                    "Series 30"
+                ]
+            },{
+                "sectionName": "CLOCK SPEED",
+                "id": "clock-speed",
+                "nameId": "displaynone",
+                "brandIcon": "assets/images/arrow-up.svg",
+                "selectedItems": [
+                    "1.5 - 1.9GHz",
+                    "2 - 2.1GHz",
+                    "2 - 2.5GHz",
+                    "2.2 - 2.4Hz",
+                    "2.5 & Above",
+                    "2.5 GHz Above",
+                    "Below 1.5 GHz",
+                    "Less than 900 MHz"
             
-        }
+                ]
+            }
+
         ]
     },
     "main": {
@@ -464,7 +787,6 @@
                 "offerTxt": "Save Deal",
                 "exchangeTxt": "Bank Offer"
             },
-            
             {
                 "id": "realme",
                 "mobileImg": "assets/images/realme.png",

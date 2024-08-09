@@ -44,9 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
       const sidBar = document.querySelector(".sidebar")
+      // filter
+
       const sideBarTop = document.querySelector(".filter")
       sideBarTop.innerHTML = `<span>${data.sideBar.filterTxt}</span>`
 
+      // catogory
       const Catogories = document.querySelector(".catogories")
       const catogoryTxt = document.createElement("div")
       catogoryTxt.className = "catogory-Txt"
@@ -63,134 +66,208 @@ document.addEventListener('DOMContentLoaded', () => {
       catogoryTxt2.innerHTML = `<a>${data.sideBar.mobileTxt}</a>`
       Catogories.appendChild(catogoryTxt2)
 
-      const priceRange = document.querySelector(".price-range")
 
-      const priceTxt = document.createElement("span")
+      // price
+      const price=document.querySelector(".price-range")
+      const priceTxt = document.querySelector(".price-span")
       priceTxt.innerText = data.sideBar.priceTxt
-      priceRange.appendChild(priceTxt)
 
-      const range = document.createElement("div")
-      range.className = "range"
-      range.innerHTML = `<input type="range" min="0" max="30000" step="1">`
-      priceRange.appendChild(range)
+      const rangeTop = document.querySelector(".range-top")
+      const rangeTopDiv=document.createElement("div")
+      rangeTopDiv.className=
+      rangeTop.appendChild(rangeTopDiv)
+
+      const Lrange=document.querySelector(".left-range")
+      const LrangeDiv=document.createElement("div")
+      LrangeDiv.className="left-round"
+      Lrange.appendChild(LrangeDiv)
+
+      const midrange=document.querySelector(".mid-range")
+      const midrangeDiv=document.createElement("div")
+      midrangeDiv.className="mid-line"
+      midrange.appendChild(midrangeDiv)
+
+      const Rrange=document.querySelector(".right-range")
+      const RrangeDiv=document.createElement("div")
+      RrangeDiv.className="right-round"
+
+      Rrange.appendChild(RrangeDiv)
 
 
+      const MinMax = document.querySelector("min-max")
+       const min=document.createElement("div")
+       min.className="min"
+
+      //  const 
+     
+      // brand
       const brand = document.querySelector(".brand")
 
+      // brand-head
       const brandtxt = document.createElement("div")
       brandtxt.className = "brand-txt"
       brandtxt.innerHTML = `<span>${data.sideBar.brandTxt}</span><img src="${data.sideBar.brandIcon}">`
-
       brand.appendChild(brandtxt)
 
+
+      // brand-content
+      const brandCont = document.createElement("div")
+      brandCont.className = "brand-cont"
+
+
+      // brand search
       const brandSearch = document.createElement("div")
       brandSearch.className = "search-content"
       const searchDiv = document.createElement("div")
       searchDiv.className = "search-div"
       searchDiv.innerHTML = `<img src="${data.sideBar.searchIcon}">
     <input type="text"  class="brand-input"  placeholder="${data.sideBar.brandInput}">`
+      
       brandSearch.appendChild(searchDiv)
-      brand.appendChild(brandSearch)
+      brandCont.appendChild(brandSearch)
+      brand.appendChild(brandCont)
 
+
+
+      // event listener for brand dropdown
+      brandtxt.addEventListener('click', () => {
+        if (brandCont.style.display === 'none' || brandCont.style.display === '') {
+          brandCont.style.display = 'block';
+        } else {
+          brandCont.style.display = 'none';
+        }
+      })
+
+
+      // brand search input
 
       const brandInput = document.querySelector(".brand-input")
+      // console.log(brandInput)
       brandInput.addEventListener('input', function () {
         const searchItem = this.value.toLowerCase();
 
-        const filteredItem = data.sideBar.checkBoxes.filter(product =>
-          product.name.toLowerCase().includes(searchItem)
+        const filteredItem = data.sideBar.brand.filter(product =>
+          product.includes(searchItem.toLowerCase())
+       
         );
+        console.log(filteredItem)
         products(filteredItem);
       });
 
 
-
+      // brand checkboxes
       const checkboxContent = document.createElement("div")
       checkboxContent.className = "checkbox-content"
-      data.sideBar.checkBoxes.forEach(item => {
+
+
+      // brand checkbox loop
+      data.sideBar.brand.forEach(item => {
         const checkboxItem = document.createElement("div")
         checkboxItem.className = "checkbox-item"
         checkboxItem.innerHTML = ` <label>
-      <input type="checkbox" id="${item.id}" name="brand"  class="checkboxInput" value="${item.name}">
-      <div class="checkboxTxt">  ${item.name}</div>
+      <input type="checkbox" " name="brand"  class="checkboxInput" value="${item}">
+      <div class="checkboxTxt">  ${item}</div>
     </label>`
         checkboxContent.appendChild(checkboxItem)
-
       })
+      brandCont.appendChild(checkboxContent)
 
-      brand.appendChild(checkboxContent)
 
-      // checkbox filter
 
+      // brand filter
       const checkInputs = document.querySelectorAll(".checkboxInput");
-      const set = new Set();  // Initialize the set
+      function filterData() {
+        const selectedBrands = Array.from(checkInputs)
+          .filter(checkbox => checkbox.checked)
+          .map(checkbox => checkbox.value.toLowerCase());
 
-      checkInputs.forEach(input => {
-        input.addEventListener('change', (e) => {
-          if (input.checked) {
-            set.add(input.value.toLowerCase());
-          } else {
-            set.delete(input.value.toLowerCase());
-          }
-          console.log(set);
-          checkbox();
-        });
-      });
+        console.log("Selected Brands:", selectedBrands);
 
-      function checkbox() {
-        if (set.size === 0) {  // Use `set.size` to check if the set is empty
-          products(data.main.mobileGrid);
-        } else {
-          const filterData = data.main.mobileGrid.filter(item =>
-            set.has(item.id.toLowerCase())
+        if (selectedBrands.length > 0) {
+          const filteredProducts = data.main.mobileGrid.filter(product =>
+            selectedBrands.includes(product.id.toLowerCase())
           );
-          products(filterData);
+          console.log("Filtered Products:", filteredProducts);
+          products(filteredProducts);
+        } else {
+          console.log("All Products:", data.main.mobileGrid);
+          products(data.main.mobileGrid);
         }
       }
 
-      // const checkInputs = document.querySelectorAll(".checkboxInput");
+      document.querySelectorAll('.checkboxInput').forEach(checkbox => {
+        checkbox.addEventListener('change', filterData);
+      });
 
-      // function filterData() {
-      //   const selectedBrands = Array.from(checkInputs)
-      //     .filter(checkbox => checkbox.checked)
-      //     .map(checkbox => checkbox.value);
-      //   // console.log(selectedBrands)
-      //   if (selectedBrands.length > 0) {
-      //     const filter = data.main.mobileGrid.filter(product => {
-      //     return  selectedBrands.includes(product.id.toUpperCase())});
-      //     console.log(filter);
-      //   } else {
-      //     console.log(data.sideBar.checkBoxes);
-      //   }
-      // }
+      filterData();
 
-      // document.querySelectorAll('.checkboxInput').forEach(checkbox => {
-      //   checkbox.addEventListener('change', filterData);
-      // });
-
-      // filterData();
+      // flipkart Assured img
 
       const flipImgContent = document.createElement("div")
       flipImgContent.className = "flipImgContent"
       flipImgContent.innerHTML = '<input type="checkbox">'
 
       const flipkartImg = document.createElement("div")
-      flipkartImg.className="flip-img"
+      flipkartImg.className = "flip-img"
       flipkartImg.innerHTML = `<img src="${data.sideBar.flipCheck}">`
       flipImgContent.appendChild(flipkartImg)
       const flipspan = document.createElement("div")
-      flipspan.className="flip-span"
+      flipspan.className = "flip-span"
       flipspan.innerHTML = `<span>?</span>`
       flipImgContent.appendChild(flipspan)
 
       sidBar.appendChild(flipImgContent)
 
-data.sideBar.customerRating.forEach(item=>{
-const sideSections=document.createElement("div")
-sideSections.className="side-sections"
-const sideSecHead=document.createElement("div")
-sideSecHead.innerHTML=`<h2${item.customerHead}</h2>`
-})
+
+      // sidesection
+      const sideSections = document.createElement("div")
+      sideSections.className = "side-section"
+      data.sideBar.sidebarSections.forEach(item => {
+        const section = document.createElement("div")
+        section.className = item.id
+        section.id = item.nameId
+        const secHead = document.createElement("div")
+        secHead.className = "sec-head"
+        secHead.innerHTML = `<span>${item.sectionName}</span><img class="drop-img"  src="${item.brandIcon}">`
+        section.appendChild(secHead)
+
+        const dropDownImg = document.querySelector(".drop-img")
+        console.log(dropDownImg)
+        secHead.addEventListener('click', () => {
+          if (secDropdown.style.display === 'none' || secDropdown.style.display === '') {
+            secDropdown.style.display = 'block';
+          } else {
+            secDropdown.style.display = 'none';
+          }
+        })
+
+        secHead.addEventListener('click', function () {
+          dropDownImg.style.transform = dropDownImg.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
+        })
+
+        const secDropdown = document.createElement("div")
+        secDropdown.className = "sec-dropdown"
+        item.selectedItems.forEach(checkItem => {
+          const checkDiv = document.createElement("div")
+          checkDiv.className = "checkDiv"
+
+          const checkInput = document.createElement("input")
+          checkInput.type = "checkbox"
+          checkDiv.appendChild(checkInput)
+          const checkLabel = document.createElement("label")
+          checkLabel.innerHTML = checkItem
+          checkDiv.appendChild(checkLabel)
+
+          secDropdown.appendChild(checkDiv)
+
+          section.appendChild(secDropdown)
+          sideSections.appendChild(section)
+        })
+      })
+
+      sidBar.appendChild(sideSections)
+
+
 
       // -maincontent
 
@@ -263,9 +340,10 @@ sideSecHead.innerHTML=`<h2${item.customerHead}</h2>`
 
 
       // right-main Content
-      const rightContent = document.querySelector(".right-content")
 
       function products(productItem) {
+        const rightContent = document.querySelector(".right-content")
+
 
         rightContent.innerHTML = '';
 
@@ -377,9 +455,6 @@ sideSecHead.innerHTML=`<h2${item.customerHead}</h2>`
           card.appendChild(cardRight)
           cardPadding.appendChild(card)
           rightContent.appendChild(cardPadding)
-
-
-
         })
       }
       products(data.main.mobileGrid)
