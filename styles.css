@@ -289,7 +289,7 @@ display: none;
     margin: 0 auto;
     min-width: 978px;
     max-width: 1680px;
-    padding: 8px;
+    padding: 7px 8px;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
@@ -326,7 +326,7 @@ display: none;
     text-transform: capitalize;
     font-family: "inter-medium";
     line-height: 25.2px;
-    letter-spacing: 0.3px;
+    letter-spacing:- 0.5px;
     font-weight: 500;
 }
 
@@ -604,6 +604,7 @@ display: none;
 .right-end {
     display: flex;
     flex-direction: column;
+    padding-left: 25px;
 }
 
 .end-top {
@@ -643,18 +644,24 @@ display: none;
 }
 
 .price-last {
-    font-size: 14px;
+    font-size: 12px;
     color: #878787;
     font-family: "inter-regular";
-    padding-top: 5px;
+    padding-top: 10px;
+    display: flex;
+}
+.price-last p{
+    margin: 0;
+    text-decoration: line-through;
 }
 
 .price-last span {
     color: #388e3c;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: -.2px;
     font-weight: 500;
     margin-left: 10px;
+    text-decoration: none !important;
 }
 
 .price-btm {
@@ -671,21 +678,23 @@ display: none;
 
 .offer-txt {
     display: inline-block;
+    margin-top: 2px;
 }
 
 .offer-txt span {
     color: rgb(38, 165, 65);
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     font-family: "inter-regular";
 }
 
 .btm-span {
     font-family: "inter-regular";
-    font-size: 14px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     display: inline-flex;
+    margin-top:5px ;
 }
 
 .btm-span span {
@@ -695,12 +704,13 @@ display: none;
 }
 
 .catogories {
-    padding: 16px;
+    padding: 16px 16px;
     border-bottom: 1px solid #f0f0f0;
     display: flex;
     flex-flow: column;
     box-sizing: border-box;
     gap: 5px;
+    padding-top: 14px;
 }
 
 .catogory-Txt {
@@ -708,12 +718,12 @@ display: none;
 }
 
 .catogory-Txt span {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     font-family: "inter-medium";
-    line-height: 16.8px;
+    line-height: 14px;
     color: #212121;
-
+    letter-spacing: 0.3px;
 }
 
 .catogory-Txt1 {
@@ -738,10 +748,11 @@ display: none;
     line-height: 19.6px;
     font-family: "inter-regular";
     padding-left: 5px;
+    letter-spacing:0.2px ;
 }
 
 .catogory-Txt2 {
-    padding: 5px 0;
+    padding: 4px 0;
 }
 
 .catogory-Txt2 a {
@@ -750,6 +761,7 @@ display: none;
     font-family: "inter-medium";
     line-height: 19.6px;
     margin-left: 15px;
+    letter-spacing: 0.2px;
 }
 
 .price-range {
@@ -771,15 +783,16 @@ display: none;
   position: relative;
   bottom: -6px;
   width:238 px;
-  height: 29px;
+  height: 23px;
   background: #e0e0e0;
 }
 .range{
     position: relative;
   height: 13px;
   cursor: pointer;
+  top:4.5px
 }
-.left-range{
+.round-btn{
     display: inline-block;
   position: absolute;
   z-index: 1;
@@ -790,7 +803,77 @@ display: none;
   transition: translate .5s ease-out;
 }
 
+.round{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #bababa;
+    position: absolute;
+    background-color: #fff;
+     
+  }
 
+  #left-range>div{
+    left: -7px;
+    position: absolute;
+  }
+ #right-range{
+   right:0;
+   position: absolute;
+
+ }
+ #right-range>div{
+    right: -6px;
+    position: absolute;
+
+ }
+ .mid-range{
+    width: 100%;
+    top:2px;
+    position: relative;
+ }
+ .mid-line{
+    width: 100%;
+    height: 6px;
+    transform-origin: left center;
+  top: 55px;
+  background-color: #2874f0;
+  /* transform: translate(0px) scaleX(0.995); */
+ }
+
+ .min-max{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+
+ }
+ .min{
+    width: 99.2833px;
+    height: 24px;
+ }
+ .min select{
+    width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 1px;
+  background-color: #fff;
+  height: 100%;
+
+ }
+ .max{
+    width: 99.2833px;
+    height: 24px;
+ }
+ .max select{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+    background-color: #fff;
+    height: 100%;
+ }
+  
+
+/* fri */
 .brand {
     display: flex;
     box-sizing: border-box;
@@ -864,6 +947,15 @@ display: none;
     font-size: 13px;
     width: 100%-25px;
     color: #2c2c2c;
+}
+
+.brand>div:last-child{
+    font-family: "inter-medium";
+    font-size: 12px;
+    color: #2874f0;
+    margin-top: 9px;
+    cursor: pointer;
+    margin-left: 2px;
 }
 
 .flipImgContent {
@@ -961,4 +1053,102 @@ display: none;
 }
   .side-section  #displaynone .sec-dropdown{
     display: none;
+}
+
+footer{
+    background-color: #172337;
+  min-width: 978px;
+  border-top: 1px solid #ddd;
+  margin-top: 25px;
+  height: 350.4px;
+  overflow: hidden;
+}
+.footer-padding{
+    display: flex;
+    flex-direction: column;
+}
+.top-padding{
+    margin-left: 65px;
+  width: 90% !important;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+}
+.footer-grid{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+.grid-head{
+    color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  font-family: "inter-regular";
+}
+.footer-grid ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-grid ul li{
+    color: #fff;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  font-family: "inter-regular";
+
+}
+.grid-padding{
+    width: 100%;
+    
+}
+.footer-grid>div:nth-child(5){
+    border-left: 1px solid #fff;
+}
+.footer-grid>div:nth-last-child(2){
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.grid-padding:nth-last-child(2){
+    border-left: 1px solid #fff;
+
+}
+.footer-down{
+    box-sizing: border-box;
+    width: 100%;
+    height: 72.8px;
+}
+.down-padding{
+    border-top: 1px solid #454d5e;
+    padding: 25px 0;
+    margin-top: 40px;
+    width: 100%; 
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.down-item{
+    display: flex;
+    flex-direction: row;
+}
+.down-item span{
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: "inter-regular";
+    margin-left: 8px;
+}
+.moreNone{
+    display: none;
+}
+
+.side-section>div button{
+    border: none;
+    background-color: #fff;
+    padding-top: 10px;
 }

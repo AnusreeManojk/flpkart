@@ -68,11 +68,11 @@
             "₹30000"
         ],
         "max":[
+            "₹30000+",
              "₹10000",
              "₹15000",
              "₹20000",
-             "₹30000",
-             "₹30000+"
+             "₹30000"
 
         ],
         "brandTxt": "BRAND",
@@ -99,7 +99,8 @@
                 "selectedItems": [
                     "4 <img src='assets/images/blackstar.svg'> & above",
                     "3 <img src='assets/images/blackstar.svg'> & above"
-                ]
+                ],
+                "moreDisplay":"moreNone"
             },
             {
                 "sectionName": "GST INVOICE AVAILABLE",
@@ -109,7 +110,9 @@
                 "brandIcon": "assets/images/arrow-up.svg",
                 "selectedItems": [
                     "GST Invoice Available"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "RAM",
@@ -130,7 +133,9 @@
                     "A",
                     "B",
                     "6 GB Above"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "INTERNAL STORAGE",
@@ -145,7 +150,7 @@
                     "16-31.9GB",
                     "8-15.9GB"
                 ],
-                "moreBtn": "10 MORE"
+                "more": "10 MORE"
             },
             {
                 "sectionName": "BATTERY CAPACITY",
@@ -166,7 +171,9 @@
                     "G",
                     "Less than 1000mAh",
                     "P"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "SCREEN SIZE",
@@ -186,7 +193,9 @@
                     "6.4 inch & Above",
                     "6 - 6.3 inch",
                     "6 inch above"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "PRIMARY CAMERA",
@@ -206,7 +215,9 @@
                     "32 - 47.9 MP",
                     "48 - 63.9 MP",
                     "64 MP & Above"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "SECONDARY CAMERA",
@@ -223,7 +234,9 @@
                     "5 - 7.9 MP",
                     "8 - 11.9 MP",
                     "Below 5 MP"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "PROCESSOR BRAND",
@@ -245,7 +258,9 @@
                     "Snapdragon",
                     "Spreadtrum",
                     "Unisoc"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "SPECIALITY",
@@ -257,7 +272,9 @@
                     "Higher Performance",
                     "Long-Lasting Battery",
                     "Selfie Camera"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "RESOLUTION TYPE",
@@ -283,7 +300,10 @@
                     "Android",
                     "Symbian",
                     "Windows"
-                ]
+                ],
+                "more":"",
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "NETWORK TYPE",
@@ -296,7 +316,9 @@
                     "4G",
                     "4G VOLTE",
                     "5G"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "SIM TYPE",
@@ -308,7 +330,9 @@
                     "Dual Sim(Nano + eSIM)",
                     "Dual Sim(Physical + eSIM)",
                     "Single Sim"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "OFFERS",
@@ -319,7 +343,9 @@
                     "Buy More, Save More",
                     "No Cost EMI",
                     "Special Price"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "FEATURES",
@@ -334,7 +360,9 @@
                     "Music Player",
                     "Bluetooth",
                     "USB"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "TYPE",
@@ -344,7 +372,8 @@
                 "selectedItems": [
                     "Smartphones",
                     "Feature Phones"
-                ]
+                ],
+                "moreDisplay":"moreNone"
             },
             {
                 "sectionName": "NUMBER OF CORES",
@@ -357,7 +386,8 @@
                     "Octa Core",
                     "Quad Core",
                     "Single Core"
-                ]
+                ],
+                "moreDisplay":"moreNone"
             },
             {
                 "sectionName": "AVAILABILITY",
@@ -366,7 +396,8 @@
                 "brandIcon": "assets/images/arrow-up.svg",
                 "selectedItems": [
                     "Exclude Out of Stock"
-                ]
+                ],
+                "moreDisplay":"moreNone"
             },
             {
                 "sectionName": "DISCOUNT",
@@ -379,7 +410,9 @@
                     "30% or more",
                     "20% or more",
                     "10% or more"
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             },
             {
                 "sectionName": "OPERATING SYSTEM VERSION NAME",
@@ -399,7 +432,9 @@
                     "Oxygen",
                     "Pie",
                     "Series 30"
-                ]
+                ],
+                "more":"12 more"
+
             },{
                 "sectionName": "CLOCK SPEED",
                 "id": "clock-speed",
@@ -415,7 +450,9 @@
                     "Below 1.5 GHz",
                     "Less than 900 MHz"
             
-                ]
+                ],
+                "moreDisplay":"moreNone"
+
             }
 
         ]
@@ -861,7 +898,162 @@
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save Deal",
                 "exchangeTxt": "Upto ₹8,100 Off on Exchange"
+            },
+            {
+                "id": "samsung",
+                "mobileImg": "assets/images/samsungS23.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileName": "SAMSUNG Galaxy S23 5G (Green, 128 GB)",
+                "rateTxt": "4.5",
+                "rateImg": "assets/images/whitestar.svg",
+                "rateNumber": "9,320 Ratings & 321 Reviews",
+                "specification": [
+                    "8 GB RAM | 128 GB ROM",
+                    "15.49 cm (6.1 inch) Full HD+ Display",
+                    "50MP + 10MP + 12MP | 12MP Front Camera",
+                    "3900 mAh Lithium Ion Battery",
+                    "Qualcomm Snapdragon 8 Gen 2 Processor",
+                    "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for In-Box Accessories"
+                ],
+                "price": "44,999",
+                "flipkartImg": "assets/images/flipkartAssured.png",
+                "originalPrice": "89,999",
+                "percentage": "50% off",
+                "deliveryStatus": "Free delivery",
+                "offerTxt": "Save Deal",
+                "exchangeTxt": "Upto ₹36,300 Off on Exchange"
+            },
+            {
+                "id": "vivo",
+                "mobileImg": "assets/images/vivoT3.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileName": "vivo T3x 5G (Crimson Bliss, 128 GB)",
+                "rateTxt": "4.5",
+                "rateImg": "assets/images/whitestar.svg",
+                "rateNumber": "42,081 Ratings & 1,318 Reviews",
+                "specification": [
+                    "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                    "17.07 cm (6.72 inch) Full HD+ Display",
+                    "50MP + 2MP | 8MP Front Camera",
+                    "6000 mAh Battery",
+                    "6 Gen 1 Processor",
+                    "1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for In-Box Accessories"
+                ],
+                "price": "14,999",
+                "flipkartImg": "assets/images/flipkartAssured.png",
+                "originalPrice": "18,999",
+                "percentage": "21% off",
+                "deliveryStatus": "Free delivery",
+                "offerTxt": "Save Deal",
+                "exchangeTxt": "Bank Offer"
             }
         ]
+    },
+
+    "footer":{
+        "footerTop":[
+            {
+                "topHead":"ABOUT",
+                "footerGrid":[
+                    "Contact Us",
+                    "About Us",
+                    "Careers",
+                    "Flipkart Stories",
+                    "Press",
+                    "Corporate Information"
+                ]
+            },
+            {
+                "topHead":"GROUP COMPANIES",
+                "footerGrid":[
+                    "Myntra",
+                    "Cleartrip",
+                    "Shopsy"
+                ]
+            },
+            {
+                "topHead":"HELP",
+                "footerGrid":[
+                    "Payments",
+                    "Shipping",
+                    "Cancellation & Returnsareers",
+                    "FAQ",
+                    "Report Infringement"
+                ]
+            },
+            {
+                "topHead":"CONSUMER POLICY",
+                "footerGrid":[
+                    "Cancellation & Returns",
+                    "Terms Of Use",
+                    "Security",
+                    "Privacy",
+                    "Sitemap",
+                    "Grievance Redressal",
+                    "EPR Compliance"
+                ]
+            },
+            {
+                "topHead":"Mail Us:",
+                "footerGrid":[
+                    "Flipkart Internet Private Limited, ",
+                    " Buildings Alyssa, Begonia & ",
+                    " Buildings Alyssa, Begonia & ",
+                    " Outer Ring Road, Devarabeesanahalli Village, ",
+                    " Bengaluru, 560103, ",
+                    " Karnataka, India",
+                    "Social"
+                ],
+                "SocialImg":[
+                    "assets/images/face.svg",
+                    "assets/images/x.svg",
+                    "assets/images/youtube.svg"
+                ]
+            },
+            {
+                "topHead":"Registered Office Address:",
+                "footerGrid":[
+                    "Flipkart Internet Private Limited, ",
+                    " Buildings Alyssa, Begonia & ",
+                    " Clove Embassy Tech Village, ",
+                    " Outer Ring Road, Devarabeesanahalli Village, ",
+                    " Bengaluru, 560103, ",
+                    "  Karnataka, India  ",
+                    "  CIN : U51109KA2012PTC066107  ",
+                    " Telephone:<a>044-45614700</a>/<a>044-67415800</a> "
+                ]
+            }
+        ],
+        "footerBottom":[
+                {
+                    "footerImg":"/assets/images/seller.svg",
+                    "imgSpan":"Become a Seller"
+                },
+                {
+                    "footerImg":"/assets/images/advertice.svg",
+                    "imgSpan":"Advertise"
+                },
+                {
+                    "footerImg":"assets/images/gift.svg",
+                    "imgSpan":"Gift Cards"
+                },
+                {
+                    "footerImg":"assets/images/help.svg",
+                    "imgSpan":"Help Center"
+                },
+                {
+                    "footerImg":"",
+                    "imgSpan":"© 2007-2024 Flipkart.com"
+                },
+                {
+                    "footerImg":"assets/images/right.svg",
+                    "imgSpan":""
+
+                }
+            ]
+
+            
+        }
     }
-}

@@ -68,38 +68,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
       // price
-      const price=document.querySelector(".price-range")
+      const price = document.querySelector(".price-range")
       const priceTxt = document.querySelector(".price-span")
       priceTxt.innerText = data.sideBar.priceTxt
 
       const rangeTop = document.querySelector(".range-top")
-      const rangeTopDiv=document.createElement("div")
-      rangeTopDiv.className=
+      const rangeTopDiv = document.createElement("div")
+      rangeTopDiv.className = "range-top"
       rangeTop.appendChild(rangeTopDiv)
 
-      const Lrange=document.querySelector(".left-range")
-      const LrangeDiv=document.createElement("div")
-      LrangeDiv.className="left-round"
+      const Lrange = document.getElementById("left-range")
+      const LrangeDiv = document.createElement("div")
+      LrangeDiv.className = "round"
       Lrange.appendChild(LrangeDiv)
 
-      const midrange=document.querySelector(".mid-range")
-      const midrangeDiv=document.createElement("div")
-      midrangeDiv.className="mid-line"
+      const midrange = document.querySelector(".mid-range")
+      const midrangeDiv = document.createElement("div")
+      midrangeDiv.className = "mid-line"
       midrange.appendChild(midrangeDiv)
 
-      const Rrange=document.querySelector(".right-range")
-      const RrangeDiv=document.createElement("div")
-      RrangeDiv.className="right-round"
-
+      const Rrange = document.getElementById("right-range")
+      const RrangeDiv = document.createElement("div")
+      RrangeDiv.className = "round"
       Rrange.appendChild(RrangeDiv)
 
 
-      const MinMax = document.querySelector("min-max")
-       const min=document.createElement("div")
-       min.className="min"
 
-      //  const 
+// min-max Sat
+      const MinMax = document.querySelector(".min-max")
+      const min = document.createElement("div")
+      min.className = "min"
+      const minSelect = document.createElement("select")
+      data.sideBar.min.forEach(min => {
+        const option = document.createElement("option")
+        option.innerHTML = min
+        minSelect.appendChild(option)
+      })
+      min.appendChild(minSelect)
+      MinMax.appendChild(min)
+
+     const midSpan=document.createElement("div")
      
+
+      const max = document.createElement("div")
+      max.className = "max"
+      const maxSelect = document.createElement("select")
+      data.sideBar.max.forEach(min => {
+        const option = document.createElement("option")
+        option.innerHTML = min
+        maxSelect.appendChild(option)
+      })
+      max.appendChild(maxSelect)
+      MinMax.appendChild(max)
+
+// min-max end
       // brand
       const brand = document.querySelector(".brand")
 
@@ -122,10 +144,13 @@ document.addEventListener('DOMContentLoaded', () => {
       searchDiv.className = "search-div"
       searchDiv.innerHTML = `<img src="${data.sideBar.searchIcon}">
     <input type="text"  class="brand-input"  placeholder="${data.sideBar.brandInput}">`
-      
+
       brandSearch.appendChild(searchDiv)
       brandCont.appendChild(brandSearch)
       brand.appendChild(brandCont)
+      const brandMore=document.createElement("div")
+      brandMore.innerHTML=data.sideBar.more
+      brand.appendChild(brandMore)
 
 
 
@@ -148,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const filteredItem = data.sideBar.brand.filter(product =>
           product.includes(searchItem.toLowerCase())
-       
+
         );
         console.log(filteredItem)
         products(filteredItem);
@@ -263,9 +288,49 @@ document.addEventListener('DOMContentLoaded', () => {
           section.appendChild(secDropdown)
           sideSections.appendChild(section)
         })
+        const moreBtn=document.createElement("div")
+
+        moreBtn.innerHTML=`<button>${item.more}</button>`
+        moreBtn.className=item.moreDisplay
+        section.appendChild(moreBtn)
       })
 
       sidBar.appendChild(sideSections)
+
+
+      // footer
+      const topPadding = document.querySelector(".top-padding")
+      data.footer.footerTop.forEach(element => {
+        const footerGrid = document.createElement("div")
+        footerGrid.className = "footer-grid"
+        const gridPadding = document.createElement("div")
+        gridPadding.className = "grid-padding"
+        footerGrid.appendChild(gridPadding)
+        const gridHead = document.createElement("div")
+        gridHead.className = "grid-head"
+        gridHead.innerText = element.topHead
+        gridPadding.appendChild(gridHead)
+        const topUl = document.createElement("ul")
+        element.footerGrid.forEach(topItem => {
+          const listItem = document.createElement("li")
+          listItem.innerHTML = `<a>${topItem}</a>`
+          topUl.appendChild(listItem)
+
+        })
+        gridPadding.appendChild(topUl)
+        topPadding.appendChild(footerGrid)
+
+      })
+
+      const downPadding=document.querySelector(".down-padding")
+      data.footer.footerBottom.forEach(downItem=>{
+        const downItemDiv=document.createElement("div")
+        downItemDiv.className="down-item"
+        downItemDiv.innerHTML=`<img src="${downItem.footerImg}">
+        <span>${downItem.imgSpan}</span>`
+
+        downPadding.appendChild(downItemDiv)
+      })
 
 
 
@@ -338,7 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
 
-
+      
       // right-main Content
 
       function products(productItem) {
@@ -424,7 +489,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const priceTop = document.createElement("div")
           priceTop.className = "price-top"
           priceTop.innerHTML = `<h2>₹${item.price}</h2>
-        <div class="price-last">₹${item.originalPrice}<span>${item.percentage}</span></div>`
+        <div class="price-last"><p>₹${item.originalPrice}</p><span>${item.percentage}</span></div>`
           priceDetail.appendChild(priceTop)
 
           const priceBottom = document.createElement("div")
@@ -460,9 +525,6 @@ document.addEventListener('DOMContentLoaded', () => {
       products(data.main.mobileGrid)
     })
 })
-
-
-
 
 
 
