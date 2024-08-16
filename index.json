@@ -73,7 +73,6 @@
              "₹15000",
              "₹20000",
              "₹30000"
-
         ],
         "brandTxt": "BRAND",
         "brandIcon": "assets/images/arrow-up.svg",
@@ -118,7 +117,6 @@
                 "sectionName": "RAM",
                 "id": "ram",
                 "nameId": "display",
-
                 "brandIcon": "assets/images/arrow-up.svg",
                 "selectedItems": [
                     "4 GB",
@@ -949,7 +947,18 @@
                 "offerTxt": "Save Deal",
                 "exchangeTxt": "Bank Offer"
             }
-        ]
+        ],
+        "bottomBtn":
+            {
+                "btmSpan":"Page 1 of 420",
+                "btmBtn":[
+                    "1","2","3","4","5","6","7","8","9",
+                    "Next"
+
+                ]
+
+            }
+        
     },
 
     "footer":{

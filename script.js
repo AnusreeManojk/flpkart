@@ -405,6 +405,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
       
       // right-main Content
+// right bottom
+
+      const bottomBtn=document.createElement("div")
+      bottomBtn.className="bottom-btm"
+       const btmBtnDiv=document.createElement("div")
+       btmBtnDiv.className="btmBtnDiv"
+
+      const btnSpan=document.createElement("span")
+      btnSpan.innerText=data.bottomBtn.btmSpan
+     btmBtnDiv,appendChild(btnSpan)
+
+      data.bottomBtn.btmBtn.forEach(btn=>{
+        const btmBtnNav=document.createElement("div")
+        btmBtnNav.innerHTML=`<a>btn</a>`
+
+        bottomBtn.appendChild(btmBtnNav)
+      })
+  
+
+  rightContent.appendChild(bottomBtn)
 
       function products(productItem) {
         const rightContent = document.querySelector(".right-content")
