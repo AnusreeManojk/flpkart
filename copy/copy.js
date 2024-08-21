@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  fetch('index.json')
+  fetch('copy.json')
     .then(response => response.json())
     .then(data => {
       const headerContent = document.querySelector(".header-content")
@@ -408,85 +408,53 @@ document.addEventListener('DOMContentLoaded', () => {
       // right bottom
 
 
-      const bottomBtn = document.querySelector(".bottom-btn");
-
-      const btmBtnDiv = document.querySelector(".btmBtnDiv");
-
-      const btnSpan = document.createElement("span");
-      btnSpan.innerText = data.main.bottomBtn.btmSpan;
-      btmBtnDiv.appendChild(btnSpan);
-
-      // Append the btmBtnDiv to bottomBtn
-      bottomBtn.appendChild(btmBtnDiv);
-
-      const buttonDiv = document.querySelector(".button-div");
-
-      // Create and hide the prev content by default
-      const prev = document.createElement("div");
-      prev.className = "prev";
-      prev.innerHTML = data.main.bottomBtn.prev;
-      prev.style.display = 'none';
-      buttonDiv.appendChild(prev);
-
-      let firstBtmBtnNav = null;
-      let previousClickedButton = null; // To keep track of the previously clicked button
-
-      data.main.bottomBtn.btmBtn.forEach((btn, index) => {
-        const btmBtnNav = document.createElement("div");
-        btmBtnNav.className = "btmBtnNav";
-        const link = document.createElement("a");
-        link.textContent = btn;
-        btmBtnNav.appendChild(link);
-
-        if (index === 0) {
-          firstBtmBtnNav = btmBtnNav;
-        }
-
-        buttonDiv.appendChild(btmBtnNav);
-
-        btmBtnNav.addEventListener('click', () => {
-          if (previousClickedButton) {
-            previousClickedButton.style.backgroundColor = ''; // Reset to original color
-            previousClickedButton.style.color = ''; // Reset text color
-          }
-
-          btmBtnNav.style.backgroundColor = '#2874f0';
-          btmBtnNav.style.color = 'white';
-
-          if (index > 0) {
-            if (firstBtmBtnNav) {
-              firstBtmBtnNav.style.display = 'flex';
-            }
-            prev.style.display = 'flex';
-          }else{
-            prev.style.display = 'none';
-          }
-
-          previousClickedButton = btmBtnNav;
-        });
-      });
-
-      bottomBtn.appendChild(buttonDiv);
-
-      const next = document.createElement("div");
-      next.className = "next";
-      next.innerHTML = data.main.bottomBtn.next;
-      buttonDiv.appendChild(next);
+      // const btmBtnDiv= document.querySelector(".bottom-btn");
 
 
+      // let firstBtmBtnNav = null;
+      // let previousClickedButton = null; // To keep track of the previously clicked button
+
+      // data.main.bottomBtn.btmBtn.forEach((btn, index) => {
+      //   const btmBtnNav = document.createElement("div");
+      //   btmBtnNav.className = "btmBtnNav";
+      //   const link = document.createElement("a");
+      //   link.textContent = btn;
+      //   btmBtnNav.appendChild(link);
+
+      //   if (index === 0) {
+      //     firstBtmBtnNav = btmBtnNav;
+      //   }
+
+      //   btmBtnDiv.appendChild(btmBtnNav);
+
+      //   btmBtnNav.addEventListener('click', () => {
+      //     if (previousClickedButton) {
+      //       previousClickedButton.style.backgroundColor = ''; // Reset to original color
+      //       previousClickedButton.style.color = ''; // Reset text color
+      //     }
+
+      //     btmBtnNav.style.backgroundColor = '#2874f0';
+      //     btmBtnNav.style.color = 'white';
+
+      //     if (index > 0) {
+      //       if (firstBtmBtnNav) {
+      //         firstBtmBtnNav.style.display = 'flex';
+      //       }
+      //       prev.style.display = 'flex';
+      //     }else{
+      //       prev.style.display = 'none';
+      //     }
+
+      //     previousClickedButton = btmBtnNav;
+      //   });
+      // });
 
 
       // right phone card
 
-      const rightContent = document.quercontentySelector(".right-content");
+      // const rightContent = document.quercontentySelector(".right-content");
 
-      rightContent.appendChild(bottomBtn);
-
-
-
-
-
-
+      // rightContent.appendChild(bottomBtn);
 
 
       function products(productItem, page = 1, perPage = 10) {
@@ -497,8 +465,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const start = (page - 1) * perPage;
         const end = start + perPage;
         const paginatedItems = productItem.slice(start, end);
-        
-        
+
+
         paginatedItems.forEach(item => {
 
           const cardPadding = document.createElement("div")
@@ -609,20 +577,21 @@ document.addEventListener('DOMContentLoaded', () => {
           cardPadding.appendChild(card)
           rightContent.appendChild(cardPadding)
 
-
-
         })
         addPaginationControls(productItem.length, page, perPage);
 
       }
 
-const bottomDiv=document.querySelector('.bottom-div')
+      const bottomDiv = document.querySelector('.bottom-div')
 
-    const pageNum=document.createElement("div")
-    pageNum.className="page-num"
-    pageNum.innerText=data.bottomBtn.btmSpan
+      const pageNum = document.createElement("div")
+      pageNum.className = "page-num"
+      pageNum.innerHTML = data.main.bottomBtn.btmSpan
+      console.log(pageNum)
+    
 
-    bottomDiv.appendChild(pageNum)
+        bottomDiv.appendChild(pageNum)
+    
 
       function addPaginationControls(totalItems, currentPage, perPage) {
         const pagination = document.querySelector(".pagination");
@@ -662,14 +631,12 @@ const bottomDiv=document.querySelector('.bottom-div')
 
 
       }
-        bottomDiv.appendChild(pagination)
+      bottomDiv.appendChild(pagination)
 
 
       products(data.main.mobileGrid)
     })
 })
-
-
 
 
 

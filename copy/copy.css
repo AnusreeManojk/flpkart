@@ -983,7 +983,6 @@ header {
 
 .flip-span {
     width: 26px;
-    /* margin-left: 10px; */
 }
 
 .flip-span span {
@@ -1194,6 +1193,10 @@ footer {
     padding-top: 10px;
 }
 
+
+
+
+/* tue */
 .bottom-btn {
     display: flex;
     flex-direction: row;
@@ -1227,7 +1230,6 @@ footer {
 }
 
 .empty {
-    /* flex: 1; */
     order: 3;
 }
 
@@ -1262,29 +1264,29 @@ footer {
 .pagination {
     text-align: center;
     margin-top: 20px;
+    /* display: flex; */
+}
+
+.pagination>a {
+    width: 30px !important;
+    height: 30px !important;
+    padding: 5px 10px;
+   
 }
 
 .pagination a {
-    margin: 0 5px;
+    /* margin: 0 5px; */
     text-decoration: none;
     color: #007bff;
     font-family: "inter-medium";
-    /* width: 30px !important;
-height: 30px; */
-    padding: 5px;
-
 }
 
 .pagination a.active {
     font-weight: bold;
     color: #fff;
     background-color: #007bff;
-    border-radius: 50%;
-    padding: 5px;
-
 }
 
 .pagination a:hover {
     text-decoration: underline;
 }
-
