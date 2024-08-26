@@ -107,6 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
       min.appendChild(minSelect)
       MinMax.appendChild(min)
 
+      const toTxt=document.createElement("div")
+      toTxt.className="toTxt"
+      toTxt.innerHTML=data.sideBar.toTxt
+      MinMax.appendChild(toTxt)
+
       const midSpan = document.createElement("div")
 
 
@@ -282,14 +287,17 @@ document.addEventListener('DOMContentLoaded', () => {
           const checkLabel = document.createElement("label")
           checkLabel.innerHTML = checkItem
           checkDiv.appendChild(checkLabel)
-
+          //  const more=document.createElement("div")
+          //  more.innerHTML=item.more
+          //  secDropdown.appendChild(more)
+          
           secDropdown.appendChild(checkDiv)
 
           section.appendChild(secDropdown)
           sideSections.appendChild(section)
+
         })
         const moreBtn = document.createElement("div")
-
         moreBtn.innerHTML = `<button>${item.more}</button>`
         moreBtn.className = item.moreDisplay
         section.appendChild(moreBtn)

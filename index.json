@@ -60,6 +60,7 @@
         "mobileAccessories": "Mobiles & Accessories",
         "mobileTxt": "Mobiles",
         "priceTxt": "PRICE",
+        "toTxt":"to",
         "min": [
             "Min",
             "₹10000",
@@ -78,6 +79,8 @@
         "brandIcon": "assets/images/arrow-up.svg",
         "brandInput": "Search Brand",
         "searchIcon": "assets/images/small-search.svg",
+        "clearAllImg":"X",
+        "clearAllTxt":"CLEAR ALL",
         "brand": [
             "SAMSUNG",
             "vivo",
@@ -94,6 +97,8 @@
                 "id": "rating",
                 "nameId": "display",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "4 <img src='assets/images/blackstar.svg'> & above",
                     "3 <img src='assets/images/blackstar.svg'> & above"
@@ -115,6 +120,8 @@
                 "id": "ram",
                 "nameId": "display",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "4 GB",
                     "3 GB",
@@ -136,6 +143,8 @@
                 "id": "storage",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "256 GB & Above",
                     "128-255.9GB",
@@ -151,6 +160,8 @@
                 "id": "batery",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "1000 - 1999mAh",
                     "2000 - 2999mAh",
@@ -173,6 +184,8 @@
                 "id": "screen",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "5.7 - 5.9 inch",
                     "5.5 - 5.6 inch",
@@ -194,6 +207,8 @@
                 "id": "Primary-camera",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "5 - 7.9 MP",
                     "Below 5MP",
@@ -215,6 +230,8 @@
                 "id": "Secondary-camera",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "12 - 12.9 MP",
                     "12 - 15.9 MP",
@@ -233,6 +250,8 @@
                 "id": "processor",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "AMD",
                     "Apple",
@@ -256,6 +275,8 @@
                 "id": "speciality",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "Big Storage",
                     "Higher Performance",
@@ -269,6 +290,8 @@
                 "id": "resolution",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "Full HD",
                     "Full HD+",
@@ -284,6 +307,8 @@
                 "id": "operating-system",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "Android",
                     "Symbian",
@@ -297,6 +322,8 @@
                 "id": "network",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "2G",
                     "3G",
@@ -311,6 +338,8 @@
                 "id": "sim-type",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "Dual Sim",
                     "Dual Sim(Nano + eSIM)",
@@ -324,6 +353,8 @@
                 "id": "offers",
                 "nameId": "display",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "Buy More, Save More",
                     "No Cost EMI",
@@ -336,6 +367,8 @@
                 "id": "featues",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "WiFI",
                     "HD Recording",
@@ -352,6 +385,8 @@
                 "id": "type",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "Smartphones",
                     "Feature Phones"
@@ -363,6 +398,8 @@
                 "id": "cores",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "Dual Core",
                     "Hexa Core",
@@ -387,6 +424,8 @@
                 "id": "discount",
                 "nameId": "display",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "50% or more",
                     "40% or more",
@@ -401,6 +440,8 @@
                 "id": "version-name",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "Android Q",
                     "Anna",
@@ -422,6 +463,8 @@
                 "id": "clock-speed",
                 "nameId": "displaynone",
                 "brandIcon": "assets/images/arrow-up.svg",
+                "clearAllImg":"X",
+                "clearAllTxt":"CLEAR ALL",
                 "selectedItems": [
                     "1.5 - 1.9GHz",
                     "2 - 2.1GHz",

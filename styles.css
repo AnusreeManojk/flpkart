@@ -40,7 +40,7 @@ header {
 }
 
 .header-content {
-    padding: 0 124px;
+    padding: 0 120px 0 112px;
     max-width: 1248px;
     width: 100%;
     display: flex;
@@ -145,10 +145,12 @@ header {
     padding: 0 16px;
     border-radius: 2px 0 0 2px;
     border: 0;
-    font-size: 14px;
+    font-size: 13px;
     height: 36px;
     width: 100%;
     outline: none;
+    font-family: "inter-regular";
+    letter-spacing: 0.15px;
 }
 
 
@@ -169,6 +171,7 @@ header {
     margin: 0 20px 0 21px;
     position: relative;
     /* margin-left: 23px; */
+    left: 2px;
 }
 
 .login button {
@@ -177,13 +180,14 @@ header {
     cursor: pointer;
     border-radius: 2px;
     height: 31px;
-    padding: 0px 39px;
+    padding: 0px 39.94px;
     border: 1px solid #dbdbdb;
+    letter-spacing: -0.3px;
 }
 
 .login button a {
     color: #2874f0 !important;
-    letter-spacing: 0.1px;
+    letter-spacing: -0.2px;
 }
 
 .seller-txt {
@@ -193,8 +197,12 @@ header {
     align-items: center;
     margin: 0 20px;
     max-width: max-content;
+    letter-spacing: -0.2px;
 }
+.seller-txt a {
+    letter-spacing: -0.3px;
 
+}
 .more-item {
     display: flex;
     flex-direction: row;
@@ -202,16 +210,20 @@ header {
     align-items: center;
     margin: 0 20px;
     max-width: 150px;
-    gap: 10px
+    gap: 9px
 }
 
 .more-item span {
     max-width: 108px;
     color: #fff;
+    letter-spacing: -0.2px;
+
 }
 
 .more-item img {
     transform: rotate(-90deg);
+    position: relative;
+    top: 1px;
 }
 
 .cart-content {
@@ -223,7 +235,9 @@ header {
     margin: 0 20px;
     color: #fff;
 }
-
+.cart-content span{
+    letter-spacing: -0.3px;
+}
 .cart-content img {
     width: 16.5px;
     height: 15.8px;
@@ -807,13 +821,14 @@ header {
     cursor: pointer;
     width: 20px;
     height: 20px;
-    top: -3.5px;
+    top: -1.5px;
+
     transition: translate .5s ease-out;
 }
 
 .round {
-    width: 13px;
-    height: 13px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
     border: 1px solid #bababa;
     position: absolute;
@@ -822,7 +837,7 @@ header {
 }
 
 #left-range>div {
-    left: -7px;
+    left: -3px;
     position: absolute;
 }
 
@@ -833,7 +848,7 @@ header {
 }
 
 #right-range>div {
-    right: -6px;
+    right: -3px;
     position: absolute;
 
 }
@@ -857,8 +872,15 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
+    padding-top: 22px;
 
+}
+
+.toTxt {
+    font-size: 12px;
+    font-family: "inter-regular";
+    margin-top: 3px;
+    color: #878787;
 }
 
 .min {
@@ -1262,6 +1284,8 @@ footer {
 .pagination {
     text-align: center;
     margin-top: 20px;
+    height: 100%;
+
 }
 
 .pagination a {
@@ -1272,6 +1296,7 @@ footer {
     /* width: 30px !important;
 height: 30px; */
     padding: 5px;
+    height: 100%;
 
 }
 
@@ -1286,5 +1311,17 @@ height: 30px; */
 
 .pagination a:hover {
     text-decoration: underline;
+}
+
+#display>div:last-child button {
+    color: #0d529c;
+    font-size: 12px;
+    font-family: "inter-medium";
+}
+
+#displaynone>div:last-child button {
+    color: #0d529c;
+    font-size: 12px;
+    font-family: "inter-medium";
 }
 
