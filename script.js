@@ -10,22 +10,27 @@ document.addEventListener('DOMContentLoaded', () => {
         logo.innerHTML = `<div class="top-logo"><img src="${item.logo}"></div>
          <div class="bottom-logo"> <a>${item.logoText1}<span>${item.logoText2}</span><img src="${item.textImg}"></a></div> `
         headerContent.appendChild(logo)
+
         const inputDiv = document.createElement("div")
         inputDiv.className = "input-padding"
         inputDiv.innerHTML = `<div class="input-div"><input class="searchInput" type="text" placeholder="${item.placeHolder}"><button><img src="${item.searchImg}"></button></div>`
         headerContent.appendChild(inputDiv)
+
         const loginBtn = document.createElement("div")
         loginBtn.className = "login"
         loginBtn.innerHTML = `<button><a>${item.login}</a></button>`
         headerContent.appendChild(loginBtn)
+
         const sellertxt = document.createElement("div")
         sellertxt.className = "seller-txt"
         sellertxt.innerHTML = `<a>${item.sellerTxt}`
         headerContent.appendChild(sellertxt)
+
         const moreCont = document.createElement("div")
         moreCont.className = "more-item"
         moreCont.innerHTML = `<span>${item.moreTxt}</span><img src="${item.icon}">`
         headerContent.appendChild(moreCont)
+
         const cartContent = document.createElement("div")
         cartContent.className = "cart-content"
         cartContent.innerHTML = `<img src="${item.cartImg}"><span>${item.cartTxt}</span>`
@@ -47,7 +52,29 @@ document.addEventListener('DOMContentLoaded', () => {
       // filter
 
       const sideBarTop = document.querySelector(".filter")
-      sideBarTop.innerHTML = `<span>${data.sideBar.filterTxt}</span>`
+      const filterHead = document.createElement("div")
+      filterHead.className = "filter-head"
+      filterHead.innerHTML = `<span>${data.sideBar.filterTxt}</span>`
+      sideBarTop.appendChild(filterHead)
+
+
+      const filteredItems = document.createElement("div")
+      filteredItems.className = "filtered-items"
+      sideBarTop.appendChild(filteredItems)
+
+
+
+
+      // filter function
+
+   
+
+
+
+
+
+
+
 
       // catogory
       const Catogories = document.querySelector(".catogories")
@@ -99,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const min = document.createElement("div")
       min.className = "min"
       const minSelect = document.createElement("select")
+      minSelect.className = "min-select"
       data.sideBar.min.forEach(min => {
         const option = document.createElement("option")
         option.innerHTML = min
@@ -107,9 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
       min.appendChild(minSelect)
       MinMax.appendChild(min)
 
-      const toTxt=document.createElement("div")
-      toTxt.className="toTxt"
-      toTxt.innerHTML=data.sideBar.toTxt
+      const toTxt = document.createElement("div")
+      toTxt.className = "toTxt"
+      toTxt.innerHTML = data.sideBar.toTxt
       MinMax.appendChild(toTxt)
 
       const midSpan = document.createElement("div")
@@ -118,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const max = document.createElement("div")
       max.className = "max"
       const maxSelect = document.createElement("select")
+      maxSelect.className = "max-select"
       data.sideBar.max.forEach(min => {
         const option = document.createElement("option")
         option.innerHTML = min
@@ -126,7 +155,36 @@ document.addEventListener('DOMContentLoaded', () => {
       max.appendChild(maxSelect)
       MinMax.appendChild(max)
 
+      // min-max-display function
+
+      const maxItem = document.querySelector('.max-select')
+      const minItem = document.querySelector('.min-select')
+
+      maxItem.addEventListener('change', update)
+      minItem.addEventListener('change', update)
+      
+      function update() {
+      
+        const maxText = maxItem.options[maxItem.selectedIndex].value
+        const minText = minItem.options[minItem.selectedIndex].value
+      
+        const max = parseInt(maxText.replace(/[^\d]/g, ''), 10); 
+        console.log(max)
+      
+        const min = parseInt(minText.replace(/[^\d]/g, ''), 10);
+        console.log(min)
+      
+        const filter = data.main.mobileGrid.filter(item => price >= min && price <= max);
+        products(filter)
+        console.log(filter)
+      }
+
       // min-max end
+
+
+
+
+
       // brand
       const brand = document.querySelector(".brand")
 
@@ -156,7 +214,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const brandMore = document.createElement("div")
       brandMore.innerHTML = data.sideBar.more
       brand.appendChild(brandMore)
-
 
 
       // event listener for brand dropdown
@@ -223,6 +280,16 @@ document.addEventListener('DOMContentLoaded', () => {
           console.log("All Products:", data.main.mobileGrid);
           products(data.main.mobileGrid);
         }
+
+
+        // const filterCheck=document.createElement('span')
+        // selectedBrands.forEach((checkInput) => {
+
+        //     filterCheck.innerHTML = checkInput
+
+        //    filteredItems.appendChild(filterCheck);
+ 
+        // });
       }
 
       document.querySelectorAll('.checkboxInput').forEach(checkbox => {
@@ -230,6 +297,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       filterData();
+
+      function applyFilters() {
+        const chekedItem=document.getch
+
+      }
+
+
 
       // flipkart Assured img
 
@@ -247,6 +321,9 @@ document.addEventListener('DOMContentLoaded', () => {
       flipImgContent.appendChild(flipspan)
 
       sidBar.appendChild(flipImgContent)
+
+     
+
 
 
       // sidesection
@@ -271,6 +348,9 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         })
 
+
+
+
         secHead.addEventListener('click', function () {
           dropDownImg.style.transform = dropDownImg.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
         })
@@ -283,6 +363,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
           const checkInput = document.createElement("input")
           checkInput.type = "checkbox"
+          checkInput.className = "check-input"
+        
           checkDiv.appendChild(checkInput)
           const checkLabel = document.createElement("label")
           checkLabel.innerHTML = checkItem
@@ -290,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
           //  const more=document.createElement("div")
           //  more.innerHTML=item.more
           //  secDropdown.appendChild(more)
-          
+
           secDropdown.appendChild(checkDiv)
 
           section.appendChild(secDropdown)
@@ -303,7 +385,57 @@ document.addEventListener('DOMContentLoaded', () => {
         section.appendChild(moreBtn)
       })
 
+
+
+      let CheckInputs = document.querySelectorAll('.check-input');
+      console.log(CheckInputs);
+      CheckInputs.forEach((checkedInput) => {
+        checkedInput.addEventListener('change', (event) => {
+          const filteredItem = document.createElement('span');
+          filteredItem.className = 'filter-span';
+
+          filteredItem.innerHTML = checkedInput;
+
+          filteredItems.appendChild(filteredItem);
+        });
+      });
+
+
       sidBar.appendChild(sideSections)
+
+      function filterCheckboxes() {
+        // Get all filter sections
+        const filters = Array.from(document.querySelectorAll('.side-section .sec-dropdown'));
+    
+        let shouldShowNext = false;
+    
+        filters.forEach((filter, index) => {
+            const checkInputs = filter.querySelectorAll('.check-input');
+            const isAnyChecked = Array.from(checkInputs).some(input => input.checked);
+    
+            if (index === 0) {
+                // For the first filter, check its status
+                shouldShowNext = isAnyChecked;
+            } else if (!shouldShowNext) {
+                // If the previous filter was not checked, hide this one
+                filter.style.display = 'none';
+            } else {
+                // If the previous filter was checked, show this one
+                filter.style.display = 'block';
+            }
+    
+            // Update the status for the next filter
+            shouldShowNext = shouldShowNext && isAnyChecked;
+        });
+    }
+    document.querySelectorAll('.check-input').forEach(input => {
+      input.addEventListener('change', filterCheckboxes);
+  });
+  
+    
+
+
+
 
 
       // footer
@@ -466,7 +598,7 @@ document.addEventListener('DOMContentLoaded', () => {
               firstBtmBtnNav.style.display = 'flex';
             }
             prev.style.display = 'flex';
-          }else{
+          } else {
             prev.style.display = 'none';
           }
 
@@ -505,8 +637,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const start = (page - 1) * perPage;
         const end = start + perPage;
         const paginatedItems = productItem.slice(start, end);
-        
-        
+
+
         paginatedItems.forEach(item => {
 
           const cardPadding = document.createElement("div")
@@ -624,13 +756,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       }
 
-const bottomDiv=document.querySelector('.bottom-div')
+      const bottomDiv = document.querySelector('.bottom-div')
 
-    const pageNum=document.createElement("div")
-    pageNum.className="page-num"
-    pageNum.innerText=data.bottomBtn.btmSpan
+      const pageNum = document.createElement("div")
+      pageNum.className = "page-num"
+      pageNum.innerText = data.bottomBtn.btmSpan
 
-    bottomDiv.appendChild(pageNum)
+      bottomDiv.appendChild(pageNum)
 
       function addPaginationControls(totalItems, currentPage, perPage) {
         const pagination = document.querySelector(".pagination");
@@ -670,7 +802,7 @@ const bottomDiv=document.querySelector('.bottom-div')
 
 
       }
-        bottomDiv.appendChild(pagination)
+      bottomDiv.appendChild(pagination)
 
 
       products(data.main.mobileGrid)

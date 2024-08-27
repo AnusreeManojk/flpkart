@@ -1119,7 +1119,83 @@
                 "deliveryStatus": "Free delivery",
                 "offerTxt": "Save Deal",
                 "exchangeTxt": "Upto <span>₹21,200</span>Off on Exchange"
+            },
+            {
+                "id": "poco",
+                "mobileImg": "assets/images/pocopastelGreen.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileName": "POCO C65 (Pastel Blue, 128 GB)",
+                "rateTxt": "4.2",
+                "rateImg": "assets/images/whitestar.svg",
+                "rateNumber": "13,096 Ratings & 670 Reviews",
+                "specification": [
+                    "6 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                    "17.12 cm (6.74 inch) HD+ Display",
+                    "50MP + AI Lens + 2MP | 8MP Front Camera",
+                    "5000 mAh Battery",
+                    "Helio G85 Processor",
+                    "1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories"
+                ],
+                "price": "7,299",
+                "flipkartImg": "assets/images/flipkartAssured.png",
+                "originalPrice": "11,999",
+                "percentage": "39% off",
+                "deliveryStatus": "Free delivery",
+                "offerTxt": "Lowest price since launch",
+                "exchangeTxt": "Bank Offer"
+            },
+            {
+                "id": "motorola",
+                "mobileImg": "assets/images/motoMintgreen.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileName": "Motorola Edge 50 Fusion (Hot Pink, 128 GB)",
+                "rateTxt": "4.5",
+                "rateImg": "assets/images/whitestar.svg",
+                "rateNumber": "29,265 Ratings & 1,862 Reviews",
+                "specification": [
+                    "8 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                    "16.51 cm (6.5 inch) Full HD+ Display",
+                    "50MP (OIS) + 8MP | 16MP Front Camera",
+                    "6000 mAh Battery",
+                    "Dimensity 7025 Processor",
+                    "1 Year on Handset and 6 Months on Accessories"
+                ],
+                "price": "13,999",
+                "flipkartImg": "assets/images/flipkartAssured.png",
+                "originalPrice": "17,999",
+                "percentage": "22% off",
+                "deliveryStatus": "Free delivery",
+                "offerTxt": "Save Deal",
+                "exchangeTxt": "No Cost EMI from ₹2,334/month"
+            },
+            {
+                "id": "redmi",
+                "mobileImg": "assets/images/redmi13cgreen.png",
+                "checkBoxTxt": "Add to compare",
+                "likeImg": "assets/images/like.svg",
+                "mobileName": "REDMI 13C (Starshine Green, 128 GB)",
+                "rateTxt": "4.2",
+                "rateImg": "assets/images/whitestar.svg",
+                "rateNumber": "33,979 Ratings & 1,432 Reviews",
+                "specification": [
+                    "4 GB RAM | 128 GB ROM | Expandable Upto 1 TB",
+                    "17.12 cm (6.74 inch) HD+ Display",
+                    "50MP Rear Camera | 8MP Front Camera",
+                    "5000 mAh Battery",
+                    "Helio G85 Processor",
+                    "1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories"
+                ],
+                "price": "7,699",
+                "flipkartImg": "assets/images/flipkartAssured.png",
+                "originalPrice": "11,999",
+                "percentage": "35% off",
+                "deliveryStatus": "Free delivery",
+                "offerTxt": "Save Deal",
+                "exchangeTxt": "Bank Offer"
             }
+            
         ],
         "bottomBtn": {
             "btmSpan": "Page 1 of 420",

@@ -37,10 +37,13 @@ header {
     width: 100%;
     height: 56px;
     background-color: #2874f0;
+    position: fixed;
+    z-index: 2;
+     margin-bottom: 100px;
 }
 
 .header-content {
-    padding: 0 120px 0 112px;
+    padding: 0px 125px 0px 112px;
     max-width: 1248px;
     width: 100%;
     display: flex;
@@ -50,6 +53,8 @@ header {
     font-family: "inter-medium";
     margin: 0 auto;
     justify-content: right;
+    position: relative;
+    left: -1px;
 }
 
 .header-content a {
@@ -67,6 +72,8 @@ header {
     justify-content: center;
     margin-left: -10px;
     min-width: 137px;
+    position: relative;
+    left: -3px
 }
 
 .top-logo {
@@ -86,6 +93,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 2px;
+
 }
 
 .bottom-logo img {
@@ -101,7 +109,7 @@ header {
     font-weight: 200;
     margin-top: -2px;
     color: #fff;
-    letter-spacing: -0.1px !important;
+    letter-spacing: -0.2px !important;
 }
 
 .bottom-logo a img {
@@ -115,8 +123,10 @@ header {
     font-family: "inter-italics";
     font-size: 11px;
     line-height: 15.4px;
-    font-weight: 200;
+    font-weight: 800;
     margin-right: 2px;
+    /* font-weight: bold; */
+    letter-spacing: -0.3px;
 }
 
 .input-padding {
@@ -130,6 +140,8 @@ header {
     border-radius: 2px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23);
     margin: 0 14px 0 12px;
+    position: relative;
+    left: -3px;
 }
 
 .input-div {
@@ -139,6 +151,7 @@ header {
     display: flex;
     max-height: 36px;
     background-color: #fff;
+
 }
 
 .input-div input {
@@ -171,7 +184,7 @@ header {
     margin: 0 20px 0 21px;
     position: relative;
     /* margin-left: 23px; */
-    left: 2px;
+    left: -1px;
 }
 
 .login button {
@@ -180,7 +193,7 @@ header {
     cursor: pointer;
     border-radius: 2px;
     height: 31px;
-    padding: 0px 39.94px;
+    padding: 0px 39.6px;
     border: 1px solid #dbdbdb;
     letter-spacing: -0.3px;
 }
@@ -199,10 +212,12 @@ header {
     max-width: max-content;
     letter-spacing: -0.2px;
 }
+
 .seller-txt a {
     letter-spacing: -0.3px;
 
 }
+
 .more-item {
     display: flex;
     flex-direction: row;
@@ -216,7 +231,7 @@ header {
 .more-item span {
     max-width: 108px;
     color: #fff;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.5px;
 
 }
 
@@ -231,13 +246,17 @@ header {
     flex-direction: row;
     height: 100%;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
     margin: 0 20px;
     color: #fff;
+    position: relative;
+    left: 7px;
 }
-.cart-content span{
+
+.cart-content span {
     letter-spacing: -0.3px;
 }
+
 .cart-content img {
     width: 16.5px;
     height: 15.8px;
@@ -246,6 +265,7 @@ header {
 .nav-contents {
     border-bottom: 1px solid #d6cdcd;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .16);
+    padding-top: 56px;
 }
 
 .nav-padding {
@@ -335,17 +355,19 @@ header {
     border-bottom: 1px solid #f0f0f0;
     width: 100%;
     padding: 16px;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     box-sizing: border-box;
 }
 
-.filter span {
-    font-size: 18px;
+.filter-head span {
+    font-size: 17px;
     text-transform: capitalize;
     font-family: "inter-medium";
-    line-height: 25.2px;
-    letter-spacing: - 0.5px;
-    font-weight: 500;
+    line-height: 22.2px;
+    letter-spacing:  0.3px;
+    font-weight: 200;
+    position: relative;
+    top: 2px
 }
 
 .main-right {
@@ -413,16 +435,16 @@ header {
 
 .top-middle {
     display: block;
-    margin-top: 10px;
+    margin-top: 11px;
 }
 
 .top-middle span {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15.5px;
     display: inline-block;
     color: #212121;
     font-family: "inter-medium";
-    letter-spacing: -0.3px;
+    letter-spacing: -0.2px;
 }
 
 .head-btm {
@@ -434,6 +456,8 @@ header {
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 2px;
+    padding-top: 1px;
 }
 
 .head-btm ul li {
@@ -441,11 +465,16 @@ header {
     margin: 0 10px;
     font-family: "inter-medium";
     font-size: 13px;
-    line-height: 19.6px;
-    font-weight: 500;
+    line-height: 18.6px;
+    font-weight: 4400;
     cursor: pointer;
+    letter-spacing: 0.09px;
 }
 
+.head-btm ul li:not(:first-child){
+    position: relative;
+    left:-1px
+}
 .head-btm ul li:hover {
     color: #2874f0;
     border-bottom: 2px solid #2874f0;
@@ -1324,4 +1353,17 @@ height: 30px; */
     font-size: 12px;
     font-family: "inter-medium";
 }
+.filtered-items{
+    width: inherit;
+    
+}
+.filtered-items span{
+    font-size: 10px;
+    font-family: "inter-regular";
+    background-color: rgb(221, 217, 217);
+  padding:6px 8px;
+  margin: 3px;
+}
+
+ 
 
