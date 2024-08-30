@@ -495,6 +495,7 @@ document.addEventListener('DOMContentLoaded', () => {
       topMiddle.className = "top-middle"
       topMiddle.innerHTML = `<span>${data.main.mainHeader.mainHead}</span>`
       main.appendChild(topMiddle)
+// nsdncmsn
 
       // top3
       const headBtm = document.createElement("div")
